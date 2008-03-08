@@ -1,0 +1,5 @@
+# Invoke xemacs with command line arguments
+
+/cygdrive/c/PROGRA~1/XEmacs/XEmacs-21.4.19/i586-pc-win32/xemacs.exe $* &
+
+

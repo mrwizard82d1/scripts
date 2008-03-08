@@ -1,0 +1,3 @@
+# script to invoke irb
+
+/cygdrive/c/ruby/bin/irb.bat $*

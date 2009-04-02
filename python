@@ -1,3 +1,3 @@
 # script to invoke the python interpreter
 
-/cygdrive/c/Python25/python.exe "$@"
+/cygdrive/c/Python26/python.exe -3 "$@"

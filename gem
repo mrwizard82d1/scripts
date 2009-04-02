@@ -1,0 +1,3 @@
+# Script to invoke (ruby) gems.
+
+/cygdrive/c/ruby/bin/gem.bat "$@"

@@ -1,0 +1,4 @@
+# script to execute svnlook
+
+/cygdrive/c/PROGRA~1/Subversion/bin/svnlook.exe $*
+

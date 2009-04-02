@@ -1,0 +1,4 @@
+# script to execute svnadmin
+
+/cygdrive/c/PROGRA~1/Subversion/bin/svnadmin.exe $*
+

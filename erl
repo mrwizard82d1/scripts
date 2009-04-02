@@ -1,3 +1,3 @@
-# script to execute the erlang interpreter
+# Shell script to invoke erl.
 
-/cygdrive/c/PROGRA~1/erl5.6.1/bin/erl.exe "$@"
+/cygdrive/c/PROGRA~1/erl5.6.4/bin/erl.exe $*

@@ -1,3 +1,3 @@
 # Shell script to invoke xemacs.
 
-/cygdrive/c/PROGRA~1/XEmacs/XEmacs-21.4.21/i586-pc-win32/xemacs.exe $*
+/cygdrive/c/PROGRA~1/XEmacs/XEmacs-21.4.21/i586-pc-win32/xemacs.exe "$@"

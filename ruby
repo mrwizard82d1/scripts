@@ -1,3 +1,3 @@
 # script to invoke ruby
 
-/cygdrive/c/ruby/bin/ruby.exe $*
+/cygdrive/c/ruby/bin/ruby.exe "$@"

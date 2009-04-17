@@ -1,0 +1,4 @@
+# Script to invoke python (2.6).
+
+/cygdrive/c/Python26/python.exe -3 "$@"
+

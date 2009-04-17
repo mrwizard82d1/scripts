@@ -1,3 +1,4 @@
-# script to invoke the python interpreter
+# Script to invoke python.
 
-/cygdrive/c/Python26/python.exe -3 "$@"
+/cygdrive/c/Python30/python.exe "$@"
+

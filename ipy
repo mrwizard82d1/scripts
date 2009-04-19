@@ -1,4 +1,6 @@
-# Script to invoke the IronPython interpreter.
+#! env bash
+#
+# Shell script to invoke the IronPython interpreter.
 
 
 /cygdrive/c/PROGRA~1/IRONPY~1.0/ipy.exe "$@"

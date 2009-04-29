@@ -18,7 +18,7 @@ function cd_v7()
 
 function cd_nightly_build()
 {
-	cd ~/employee/current/productdir/orion/environment/nightly_build/src/v8
+  cd /cygdrive/e/devl/ToolSrc/NightlyBuild
 }
 
 function cd_orion_env()

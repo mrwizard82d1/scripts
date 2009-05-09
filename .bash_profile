@@ -40,3 +40,8 @@ function projects()
 {
   cd ~/professional/projects
 }
+
+function ruby_utils()
+{
+	cd ~/professional/projects/ruby_utils/lib
+}

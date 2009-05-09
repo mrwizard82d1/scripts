@@ -38,7 +38,7 @@ function scf_env()
 
 function projects()
 {
-  cd ~/professional/projects
+	cd ~/professional/projects/${1}
 }
 
 function ruby_utils()

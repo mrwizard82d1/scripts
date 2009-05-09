@@ -45,3 +45,13 @@ function ruby_utils()
 {
 	cd ~/professional/projects/ruby_utils/lib
 }
+
+function tarit()
+{
+	tar -zcf ${1}.tgz --exclude=.svn ${1}
+}
+
+function untarit()
+{
+	tar -zxf ${1}.tgz
+}

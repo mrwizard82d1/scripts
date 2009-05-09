@@ -55,3 +55,8 @@ function untarit()
 {
 	tar -zxf ${1}.tgz
 }
+
+function latest()
+{
+	ls -ltd ${1} | head ${2}
+}

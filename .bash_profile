@@ -60,3 +60,8 @@ function latest()
 {
 	ls -ltd ${1} | head ${2}
 }
+
+function newer()
+{
+	find ${1} -name '*' -newer ${1}.tgz
+}

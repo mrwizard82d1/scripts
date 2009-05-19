@@ -16,6 +16,11 @@ function v7()
   cd /cygdrive/e/devl/Branches/PimsFamilyV7_1ER
 }
 
+function sandbox()
+{
+	cd /cygdrive/e/devl/sandbox/jonesl
+}
+
 function nightly_build()
 {
   cd /cygdrive/e/devl/ToolSrc/NightlyBuild

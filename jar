@@ -1,4 +1,7 @@
- Program to invoke the jar utility.
+#! bash
+
+
+# Program to invoke the jar utility.
+
 
 /cygdrive/c/PROGRA~1/Java/jdk1.6.0_07/bin/jar.exe "$@"
-

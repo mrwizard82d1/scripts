@@ -6,19 +6,19 @@ export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
 
 
 # Quickly change to directories of interest.
-function devl()
+function cf_integ()
 {
-  cd /cygdrive/e/devl/
+	cd /cygdrive/e/scf/cf_integ
 }
 
-function v7()
+function latest()
 {
-  cd /cygdrive/e/devl/Branches/PimsFamilyV7_1ER
+	ls -ltd ${1} | head ${2}
 }
 
-function sandbox()
+function newer()
 {
-	cd /cygdrive/e/devl/sandbox/jonesl
+	find ${1} -name '*' -newer ${1}.tgz
 }
 
 function nightly_build()
@@ -36,6 +36,11 @@ function orion_test()
 	cd ~/employee/current/productdir/orion/test
 }
 
+function sandbox()
+{
+	cd /cygdrive/e/devl/sandbox/jonesl
+}
+
 function scf_env()
 {
 	cd ~/employee/current/productdir/scf/environment
@@ -51,6 +56,21 @@ function ruby_utils()
 	cd ~/professional/projects/ruby_utils/lib
 }
 
+function scf()
+{
+	cd /cygdrive/e/scf
+}
+
+function src()
+{
+  cd /cygdrive/e/scf/cdm/CollaborativeForecasting/versions/release1
+}
+
+function support()
+{
+	cd /cygdrive/e/support
+}
+
 function tarit()
 {
 	tar -zcf ${1}.tgz --exclude=.svn ${1}
@@ -61,12 +81,8 @@ function untarit()
 	tar -zxf ${1}.tgz
 }
 
-function latest()
+function v7()
 {
-	ls -ltd ${1} | head ${2}
+  cd /cygdrive/e/devl/Branches/PimsFamilyV7_1ER
 }
 
-function newer()
-{
-	find ${1} -name '*' -newer ${1}.tgz
-}

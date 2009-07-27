@@ -8,7 +8,7 @@ export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
 # Quickly change to directories of interest.
 function cf_integ()
 {
-	cd /cygdrive/e/scf/cf_integ
+	cd /cygdrive/d/scf/cf_integ
 }
 
 function latest()
@@ -23,7 +23,7 @@ function newer()
 
 function nightly_build()
 {
-  cd /cygdrive/e/devl/ToolSrc/NightlyBuild
+  cd /cygdrive/d/devl/ToolSrc/NightlyBuild
 }
 
 function orion_env()
@@ -36,16 +36,6 @@ function orion_test()
 	cd ~/employee/current/productdir/orion/test
 }
 
-function sandbox()
-{
-	cd /cygdrive/e/devl/sandbox/jonesl
-}
-
-function scf_env()
-{
-	cd ~/employee/current/productdir/scf/environment
-}
-
 function projects()
 {
 	cd ~/professional/projects/${1}
@@ -56,19 +46,34 @@ function ruby_utils()
 	cd ~/professional/projects/ruby_utils/lib
 }
 
+function sandbox()
+{
+	cd /cygdrive/d/devl/sandbox/jonesl
+}
+
 function scf()
 {
-	cd /cygdrive/e/scf
+	cd /cygdrive/d/scf
+}
+
+function scf_env()
+{
+	cd ~/employee/current/productdir/scf/environment
+}
+
+function scf_test()
+{
+	cd ~/employee/current/productdir/scf/test
 }
 
 function src()
 {
-  cd /cygdrive/e/scf/cdm/CollaborativeForecasting/versions/release1
+  cd /cygdrive/d/scf/cdm/CollaborativeForecasting/versions/release1
 }
 
 function support()
 {
-	cd /cygdrive/e/support
+	cd /cygdrive/d/support
 }
 
 function tarit()
@@ -83,6 +88,6 @@ function untarit()
 
 function v7()
 {
-  cd /cygdrive/e/devl/Branches/PimsFamilyV7_1ER
+  cd /cygdrive/d/devl/Branches/PimsFamilyV7_1ER
 }
 

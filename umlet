@@ -1,0 +1,3 @@
+# Shell script to invoke umlet.
+
+/usr/local/bin/umlet9.5/umlet.exe "$@"

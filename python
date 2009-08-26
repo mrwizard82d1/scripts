@@ -1,4 +1,4 @@
 # Script to invoke python.
 
-/cygdrive/c/Python30/python.exe "$@"
+/cygdrive/c/Python31/python.exe "$@"
 

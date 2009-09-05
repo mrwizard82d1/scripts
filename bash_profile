@@ -11,6 +11,11 @@ function cf_integ()
 	cd /cygdrive/d/scf/cf_integ
 }
 
+function devl()
+{
+  cd /cygdrive/d/scf/cdm/CollaborativeForecasting/versions/release1
+}
+
 function latest()
 {
 	ls -ltd ${1} | head ${2}
@@ -64,11 +69,6 @@ function scf_env()
 function scf_test()
 {
 	cd ~/employee/current/productdir/scf/test
-}
-
-function src()
-{
-  cd /cygdrive/d/scf/cdm/CollaborativeForecasting/versions/release1
 }
 
 function support()

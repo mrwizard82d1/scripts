@@ -13,7 +13,7 @@ function cf_integ()
 
 function devl()
 {
-  cd /cygdrive/d/scf/cdm/CollaborativeForecasting/versions/release1
+  cd /cygdrive/d/scf/devl
 }
 
 function latest()

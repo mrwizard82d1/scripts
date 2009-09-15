@@ -1,0 +1,5 @@
+#! bash
+
+# Invokes eclipse.
+
+/cygdrive/c/eclipse/eclipse.exe "$@"

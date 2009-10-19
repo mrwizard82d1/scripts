@@ -1,4 +1,17 @@
 # Script to invoke python (2.6).
 
-/cygdrive/c/Python26/python.exe -3 "$@"
+# Initialize to check for Python 3.0 compatibility.
+CHECK_30_COMPATIBILITY=-3
+
+# Do we want to turn off the compatibility check
+if getopts "n" NO_CHECK
+then
+		# Clear check compatibility argument
+		CHECK_30_COMPATIBILITY=
+ 
+ 		# Do not pass the initial argument to Python.
+ 		shift
+fi
+
+/cygdrive/c/Python26/python.exe $CHECK_30_COMPATIBILITY "$@"
 

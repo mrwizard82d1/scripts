@@ -1,0 +1,7 @@
+#! bash
+
+
+# Invokes sqldeveloper.
+
+
+~/professional/software/devtools/oracle/sqldeveloper/sqldeveloper.exe "$@"

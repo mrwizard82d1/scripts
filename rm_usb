@@ -1,6 +1,13 @@
-#! env bash
+#! bash
 #
 # Shell script to remove USB drives.
 
 
-~/professional/software/system/drivetools/RemoveDrive.exe ${1}
+for d in "$@"
+do
+  if ! ~/professional/software/system/drivetools/RemoveDrive.exe $d
+  then
+    exit $?
+  fi
+done
+

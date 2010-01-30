@@ -1,0 +1,13 @@
+#! bash
+#
+# Shell script to eject removable media.
+
+
+for d in "$@"
+do
+  if ! ~/professional/software/system/drivetools/EjectMedia.exe $d
+  then
+    exit $?
+  fi
+done
+

@@ -6,6 +6,16 @@ export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
 
 
 # Quickly change to directories of interest.
+function cf_env()
+{
+	cd ~/employee/current/productdir/cf/environment
+}
+
+function cf_test()
+{
+	cd ~/employee/current/productdir/cf/test
+}
+
 function cf_integ()
 {
 	cd /cygdrive/d/scf/cf_integ
@@ -13,7 +23,7 @@ function cf_integ()
 
 function devl()
 {
-  cd /cygdrive/d/scf/devl
+  cd /cygdrive/d/scf/devl/${1}
 }
 
 function latest()
@@ -51,24 +61,14 @@ function ruby_utils()
 	cd ~/professional/projects/ruby_utils/lib
 }
 
-function sandbox()
-{
-	cd /cygdrive/d/devl/sandbox/jonesl
-}
-
 function scf()
 {
 	cd /cygdrive/d/scf
 }
 
-function scf_env()
+function sandbox()
 {
-	cd ~/employee/current/productdir/scf/environment
-}
-
-function scf_test()
-{
-	cd ~/employee/current/productdir/scf/test
+	cd /cygdrive/d/devl/sandbox/jonesl
 }
 
 function support()

@@ -6,6 +6,16 @@ export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
 
 
 # Quickly change to directories of interest.
+function caps_env()
+{
+	cd ~/employee/current/productdir/caps/environment
+}
+
+function caps_test()
+{
+	cd ~/employee/current/productdir/caps/test
+}
+
 function cf_env()
 {
 	cd ~/employee/current/productdir/cf/environment

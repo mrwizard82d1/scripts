@@ -6,34 +6,24 @@ export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
 
 
 # Quickly change to directories of interest.
-function caps_env()
-{
-	cd ~/employee/current/productdir/caps/environment
-}
-
-function caps_test()
-{
-	cd ~/employee/current/productdir/caps/test
-}
-
-function cf_env()
-{
-	cd ~/employee/current/productdir/cf/environment
-}
-
-function cf_test()
-{
-	cd ~/employee/current/productdir/cf/test
-}
-
 function cf_integ()
 {
 	cd /cygdrive/d/scf/cf_integ
 }
 
-function devl()
+function dev()
 {
-  cd /cygdrive/d/scf/devl/${1}
+  cd /cygdrive/d/scf/dev/${1}
+}
+
+function deployment()
+{
+	cd ~/employee/current/productdir/${1}/deployment/${2}
+}
+
+function env()
+{
+	cd ~/employee/current/productdir/${1}/environment/${2}
 }
 
 function latest()
@@ -51,14 +41,9 @@ function nightly_build()
   cd /cygdrive/d/devl/ToolSrc/NightlyBuild
 }
 
-function orion_env()
+function proj_mgt()
 {
-	cd ~/employee/current/productdir/orion/environment
-}
-
-function orion_test()
-{
-	cd ~/employee/current/productdir/orion/test
+	cd ~/employee/current/productdir/${1}/proj_mgt/${2}
 }
 
 function projects()
@@ -83,12 +68,17 @@ function sandbox()
 
 function support()
 {
-	cd /cygdrive/d/support
+	cd ~/employee/current/productdir/${1}/support/${2}
 }
 
 function tarit()
 {
 	tar -zcf ${1}.tgz --exclude=.svn ${1}
+}
+
+function test()
+{
+	cd ~/employee/current/productdir/${1}/test/${2}
 }
 
 function untarit()

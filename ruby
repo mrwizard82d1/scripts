@@ -1,3 +1,3 @@
-# script to invoke ruby
+# script to invoke ruby (1.8.7)
 
-/cygdrive/c/ruby/bin/ruby.exe "$@"
+/cygdrive/c/ruby187/bin/ruby.exe "$@"

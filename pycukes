@@ -1,0 +1,4 @@
+# Script to invoke pycukes.
+
+/cygdrive/c/Python26/Scripts/pycukes.exe "$@"
+

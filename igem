@@ -1,0 +1,3 @@
+# Script to invoke IronRuby Gem.
+
+/cygdrive/c/PROGRA~1/IronRuby\ 1.0/bin/igem.bat "$@"

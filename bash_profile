@@ -5,7 +5,7 @@
 if [ $TERM = cygwin ]
 then
     export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
-    export GIT_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
+    export GIT_EDITOR=/cygdrive/c/PROGRA~1/JED/bin/wjed.exe
 elif [ $TERM = xterm ]
 then
     PS1='\u@\h $ '

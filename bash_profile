@@ -2,8 +2,15 @@
 
 
 # Configure the editor for svn.
-export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
-
+if [ $TERM = cygwin ]
+then
+    export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
+    export GIT_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
+elif [ $TERM = xterm ]
+then
+    PS1='\u@\h $ '
+    export GIT_EDITOR=xjed
+fi
 
 # Quickly change to directories of interest.
 function cf_integ()

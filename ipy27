@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+#
+# Shell script to invoke the IronPython (2.7) interpreter for .NET 4.0.
+
+
+/cygdrive/c/PROGRA~1/IronPython\ 2.7/ipy.exe "$@"

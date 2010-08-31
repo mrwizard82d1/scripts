@@ -1,6 +1,1 @@
-#! env bash
-#
-# Shell script to invoke the IronPython (2.6a1) interpreter.
-
-
-/cygdrive/c/PROGRA~1/IRONPY~1.6/ipy.exe "$@"
+ipy20_4

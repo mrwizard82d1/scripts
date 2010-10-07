@@ -20,7 +20,7 @@ function cf_integ()
 
 function dev()
 {
-  cd /cygdrive/d/scf/dev/${1}
+  cd /cygdrive/d/scf/${1}
 }
 
 function deployment()
@@ -31,6 +31,11 @@ function deployment()
 function env()
 {
 	cd ~/employee/current/productdir/${1}/environment/${2}
+}
+
+function impl()
+{
+	cd ~/employee/current/productdir/${1}/implementation/${2}
 }
 
 function latest()
@@ -53,6 +58,11 @@ function proj_mgt()
 	cd ~/employee/current/productdir/${1}/proj_mgt/${2}
 }
 
+function r_and_d()
+{
+	cd ~/employee/current/productdir/${1}/r_and_d/${2}
+}
+
 function projects()
 {
 	cd ~/professional/projects/${1}
@@ -63,14 +73,14 @@ function ruby_utils()
 	cd ~/professional/projects/ruby_utils/lib
 }
 
-function scf()
-{
-	cd /cygdrive/d/scf
-}
-
 function sandbox()
 {
 	cd /cygdrive/d/devl/sandbox/jonesl
+}
+
+function sts()
+{
+	cd ~/sharpen-the-saw/${1}
 }
 
 function support()

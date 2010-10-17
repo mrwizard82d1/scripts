@@ -1,0 +1,6 @@
+#! env bash
+#
+# Invoke the IronPython (2.6) interpreter for .NET 4.0 colorful console.
+
+
+ipy -X:TabCompletion -X:ColorfulConsole "$@"

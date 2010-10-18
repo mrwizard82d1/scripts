@@ -15,57 +15,52 @@ fi
 # Quickly change to directories of interest.
 function cf_integ()
 {
-	cd /cygdrive/d/scf/cf_integ
+    cd /cygdrive/d/scf/cf_integ
 }
 
 function dev()
 {
-  cd /cygdrive/d/scf/${1}
+    cd /cygdrive/d/scf/${1}
 }
 
 function deployment()
 {
-	cd ~/employee/current/productdir/${1}/deployment/${2}
+    cd ~/employee/current/productdir/${1}/deployment/${2}
 }
 
 function env()
 {
-	cd ~/employee/current/productdir/${1}/environment/${2}
+    cd ~/employee/current/productdir/${1}/environment/${2}
 }
 
 function impl()
 {
-	cd ~/employee/current/productdir/${1}/implementation/${2}
+    cd ~/employee/current/productdir/${1}/implementation/${2}
 }
 
 function latest()
 {
-	ls -ltd ${1} | head ${2}
+    ls -ltd ${1} | head ${2}
 }
 
 function newer()
 {
-	find ${1} -name '*' -newer ${1}.tgz
-}
-
-function nightly_build()
-{
-  cd /cygdrive/d/devl/ToolSrc/NightlyBuild
+    find ${1} -name '*' -newer ${1}.tgz
 }
 
 function proj_mgt()
 {
-	cd ~/employee/current/productdir/${1}/proj_mgt/${2}
-}
-
-function r_and_d()
-{
-	cd ~/employee/current/productdir/${1}/r_and_d/${2}
+    cd ~/employee/current/productdir/${1}/proj_mgt/${2}
 }
 
 function projects()
 {
-	cd ~/professional/projects/${1}
+    cd ~/professional/projects/${1}
+}
+
+function r_and_d()
+{
+    cd ~/employee/current/productdir/${1}/r_and_d/${2}
 }
 
 function ruby_utils()

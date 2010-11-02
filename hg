@@ -1,0 +1,4 @@
+# Script to invoke mercurial.
+
+/cygdrive/c/PROGRA~1/Mercurial/hg.exe "$@"
+

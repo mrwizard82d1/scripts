@@ -6,10 +6,12 @@ if [ $TERM = cygwin ]
 then
     export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
     export GIT_EDITOR=/cygdrive/c/PROGRA~1/JED/bin/wjed.exe
+    export HG_EDITOR=/cygdrive/c/PROGRA~1/JED/bin/wjed.exe
 elif [ $TERM = xterm ]
 then
     PS1='\u@\h $ '
     export GIT_EDITOR=xjed
+    export HG_EDITOR=xjed
 fi
 
 # Quickly change to directories of interest.
@@ -20,7 +22,7 @@ function cf_integ()
 
 function dev()
 {
-    cd /cygdrive/d/scf/${1}
+    cd /cygdrive/d/scf/dev/${1}
 }
 
 function deployment()
@@ -73,6 +75,11 @@ function sandbox()
 	cd /cygdrive/d/devl/sandbox/jonesl
 }
 
+function scf()
+{
+    cd /cygdrive/d/scf/${1}
+}
+
 function sts()
 {
 	cd ~/sharpen-the-saw/${1}
@@ -102,4 +109,8 @@ function v7()
 {
   cd /cygdrive/d/devl/Branches/PimsFamilyV7_1ER
 }
+
+# Aliases
+alias hg=/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe
+alias manage_mapped_drives='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py) "$@"'
 

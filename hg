@@ -1,4 +1,0 @@
-# Script to invoke mercurial.
-
-/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe "$@"
-

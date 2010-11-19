@@ -1,6 +1,0 @@
-# Shell script to invoke wjed.
-
-/cygdrive/c/PROGRA~1/JED/bin/wjed.exe "$@"
-
-
-

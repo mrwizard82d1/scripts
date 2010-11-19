@@ -6,13 +6,20 @@ if [ $TERM = cygwin ]
 then
     export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
     export GIT_EDITOR=/cygdrive/c/PROGRA~1/JED/bin/wjed.exe
-    export HG_EDITOR=/cygdrive/c/PROGRA~1/JED/bin/wjed.exe
 elif [ $TERM = xterm ]
 then
     PS1='\u@\h $ '
     export GIT_EDITOR=xjed
-    export HG_EDITOR=xjed
 fi
+
+# Configure the default editor.
+export EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
+
+# Configure emacs screen sizes
+case `hostname` in
+    Ginny-PC) EMACS_SIZE=80x45;;
+    *) EMACS_SIZE=80x50;;
+esac
 
 # Quickly change to directories of interest.
 function cf_integ()
@@ -111,6 +118,6 @@ function v7()
 }
 
 # Aliases
-alias hg=/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe
-alias manage_mapped_drives='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py) "$@"'
-
+alias emacs="/cygdrive/c/emacs-23.2/bin/runemacs.exe -geometry $EMACS_SIZE"
+alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
+alias manage_mapped_drives='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'

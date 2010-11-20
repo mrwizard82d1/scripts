@@ -120,5 +120,7 @@ function v7()
 # Aliases
 alias emacs="/cygdrive/c/emacs-23.2/bin/runemacs.exe -geometry $EMACS_SIZE"
 alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
+alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
 alias manage_mapped_drives='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
-alias wjed=/cygdrive/c/PROGRA~1/JED/bin/wjed.exe
+alias pip='/cygdrive/c/Python27/Scripts/pip'
+alias wjed='/cygdrive/c/PROGRA~1/JED/bin/wjed.exe'

@@ -17,6 +17,7 @@ export EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
 
 # Configure emacs screen sizes
 case `hostname` in
+    Bullwinkle) EMACS_SIZE=80x45;;
     Ginny-PC) EMACS_SIZE=80x40;;
     *) EMACS_SIZE=80x50;;
 esac

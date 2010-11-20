@@ -1,4 +1,0 @@
-# Invokes the Python installer, pip.
-
-
-/cygdrive/c/Python26/Scripts/pip "$@"

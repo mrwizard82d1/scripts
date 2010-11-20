@@ -1,4 +1,0 @@
-# Invokes the Python version of Ruby cucumber, lettuce
-
-
-/cygdrive/c/Python26/python.exe $(cygpath -w /cygdrive/c/Python26/Scripts/lettuce) "$@"

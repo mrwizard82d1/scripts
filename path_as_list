@@ -1,7 +1,0 @@
-#! bash
-
-
-# Prints the system path as a human-readable list.
-
-
-python $(cygpath -w ~/professional/projects/pyutils/path2list.py) "$@"

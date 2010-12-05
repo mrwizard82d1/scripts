@@ -1,19 +1,18 @@
 # (Bash) Shell startup script.
 
 
-# Configure the editor for svn.
+# Configure the editor for svn, git and hg.
 if [ $TERM = cygwin ]
 then
     export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
     export GIT_EDITOR=/cygdrive/c/PROGRA~1/JED/bin/wjed.exe
+    export EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
 elif [ $TERM = xterm ]
 then
     PS1='\u@\h $ '
     export GIT_EDITOR=xjed
+    export EDITOR=xjed
 fi
-
-# Configure the default editor.
-export EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
 
 # Configure emacs screen sizes
 case `hostname` in
@@ -119,13 +118,17 @@ function v7()
 }
 
 # Aliases
-alias emacs="/cygdrive/c/emacs-23.2/bin/runemacs.exe -geometry $EMACS_SIZE"
-alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
-alias gem='/cygdrive/c/Ruby192/bin/gem.bat'
-alias irb='/cygdrive/c/Ruby192/bin/irb.bat'
-alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
-alias manage_mapped_drives='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
-alias path_as_list='python $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
-alias pip='/cygdrive/c/Python27/Scripts/pip'
-alias ruby='/cygdrive/c/Ruby192/bin/ruby.exe'
-alias wjed='/cygdrive/c/PROGRA~1/JED/bin/wjed.exe'
+if [ $TERM = cygwin ]
+then
+    alias clojure='java -cp $(cygpath -w ~/professional/software/languages/clojure/clojure-1.2.0/clojure.jar)\;$(cygpath -w ~/professional/software/languages/clojure/clojure-contrib-1.2.0/target/clojure-contrib-1.2.0.jar) clojure.main'
+    alias emacs="/cygdrive/c/emacs-23.2/bin/runemacs.exe -geometry $EMACS_SIZE"
+    alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
+    alias gem='/cygdrive/c/Ruby192/bin/gem.bat'
+    alias irb='/cygdrive/c/Ruby192/bin/irb.bat'
+    alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
+    alias manage_mapped_drives='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
+    alias path_as_list='python $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
+    alias pip='/cygdrive/c/Python27/Scripts/pip'
+    alias ruby='/cygdrive/c/Ruby192/bin/ruby.exe'
+    alias wjed='/cygdrive/c/PROGRA~1/JED/bin/wjed.exe'
+fi

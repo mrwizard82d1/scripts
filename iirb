@@ -1,3 +1,0 @@
-# Invoke interactive IronRuby interpreter.
-
-/cygdrive/c/PROGRA~1/IronRuby\ 1.0/bin/iirb.bat "$@"

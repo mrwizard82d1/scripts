@@ -18,6 +18,7 @@ fi
 case `hostname` in
     Bullwinkle) EMACS_SIZE=80x45;;
     Ginny-PC) EMACS_SIZE=80x40;;
+    aspen-prjly8pjb ) EMACS_SIZE=80x45;;
     *) EMACS_SIZE=80x50;;
 esac
 
@@ -121,14 +122,24 @@ function v7()
 if [ $TERM = cygwin ]
 then
     alias clojure='java -cp $(cygpath -w ~/professional/software/languages/clojure/clojure-1.2.0/clojure.jar)\;$(cygpath -w ~/professional/software/languages/clojure/clojure-contrib-1.2.0/target/clojure-contrib-1.2.0.jar) clojure.main'
+    alias cucumber='/cygdrive/c/Ruby187/bin/cucumber.bat'
     alias emacs="/cygdrive/c/emacs-23.2/bin/runemacs.exe -geometry $EMACS_SIZE"
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
-    alias gem='/cygdrive/c/Ruby192/bin/gem.bat'
-    alias irb='/cygdrive/c/Ruby192/bin/irb.bat'
+    alias gem='/cygdrive/c/Ruby187/bin/gem.bat'
+    alias igem='/cygdrive/c/PROGRA~1/IRONRU~1.0v4/bin/igem.bat "$@"'
+    alias iirb='/cygdrive/c/PROGRA~1/IRONRU~1.0v4/bin/iirb.bat "$@"'
+    alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.0v4/bin/ir.exe "$@"'
+    alias irdoc='/cygdrive/c/PROGRA~1/IRONRU~1.0v4/bin/irdoc.bat "$@"'
+    alias iri='/cygdrive/c/PROGRA~1/IRONRU~1.0v4/bin/iri.bat "$@"'
+    alias irb='/cygdrive/c/Ruby187/bin/irb.bat'
     alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
     alias manage_mapped_drives='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
     alias path_as_list='python $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
     alias pip='/cygdrive/c/Python27/Scripts/pip'
-    alias ruby='/cygdrive/c/Ruby192/bin/ruby.exe'
+    alias rdoc='/cygdrive/c/Ruby187/bin/rdoc.bat'
+    alias ri='/cygdrive/c/Ruby187/bin/ri.bat'
+    alias rspec='/cygdrive/c/Ruby187/bin/rspec.bat'
+    alias ruby='/cygdrive/c/Ruby187/bin/ruby.exe'
+    alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
     alias wjed='/cygdrive/c/PROGRA~1/JED/bin/wjed.exe'
 fi

@@ -1,0 +1,5 @@
+# Install .bash_profile.
+
+
+cp .bash_profile ~/
+

@@ -126,6 +126,7 @@ then
     alias emacs="/cygdrive/c/emacs-23.2/bin/runemacs.exe -geometry $EMACS_SIZE"
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias gem='/cygdrive/c/Ruby187/bin/gem.bat'
+    alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.0v4/bin/cucumber.bat "$@"'
     alias igem='/cygdrive/c/PROGRA~1/IRONRU~1.0v4/bin/igem.bat "$@"'
     alias iirb='/cygdrive/c/PROGRA~1/IRONRU~1.0v4/bin/iirb.bat "$@"'
     alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.0v4/bin/ir.exe "$@"'

@@ -141,5 +141,6 @@ then
     alias rspec='/cygdrive/c/Ruby187/bin/rspec.bat'
     alias ruby='/cygdrive/c/Ruby187/bin/ruby.exe'
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
+    alias scmv74='/cygdrive/c/PROGRA~1/AspenTech/aspenmimi/Bin/AspenTech.SCM.UI.Shell.exe "$@"'
     alias wjed='/cygdrive/c/PROGRA~1/JED/bin/wjed.exe'
 fi

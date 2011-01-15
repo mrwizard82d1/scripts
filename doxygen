@@ -1,3 +1,0 @@
-# Shell script to invoke (the Windows version of) doxygen.
-
-/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe "$@"

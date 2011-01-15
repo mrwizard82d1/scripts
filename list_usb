@@ -1,6 +1,0 @@
-#! env bash
-#
-# Shell script to list USB drives.
-
-
-~/professional/software/system/drivetools/ListUsbDrives.exe

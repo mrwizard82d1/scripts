@@ -1,3 +1,0 @@
-# Shell script to invoke aspell.
-
-/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe "$@"

@@ -1,3 +1,0 @@
-# Script to invoke IronRuby.
-
-/cygdrive/c/PROGRA~1/IronRuby\ 1.0/bin/ir.exe "$@"

@@ -1,6 +1,0 @@
-#! env bash
-#
-# Shell script to invoke the IronPython (2.6.1) console.
-
-
-/cygdrive/c/PROGRA~1/IronPython\ 2.6/ipy.exe -X:TabCompletion -X:ColorfulConsole "$@"

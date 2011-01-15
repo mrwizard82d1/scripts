@@ -1,5 +1,0 @@
-#! bash
-
-# Converts a path to an SVN URL.
-
-python $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py) "$@"

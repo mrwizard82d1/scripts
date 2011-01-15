@@ -1,3 +1,0 @@
-# Shell script to invoke pn (Programmer's Notepad).
-
-/cygdrive/c/PROGRA~1/PROGRA~1/pn.exe "$@"

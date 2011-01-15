@@ -1,4 +1,0 @@
-# Manages mapped drives.
-
-
-/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py) "$@"

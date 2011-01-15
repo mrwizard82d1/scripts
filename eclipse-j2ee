@@ -1,5 +1,0 @@
-#! bash
-
-# Invokes eclipse-j2ee.
-
-/cygdrive/c/eclipse-j2ee/eclipse.exe "$@"

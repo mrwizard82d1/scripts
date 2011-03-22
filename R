@@ -1,0 +1,7 @@
+#! bash
+
+
+# Script to invoke R (GUI).
+
+
+/cygdrive/c/PROGRA~1/R/R-2.9.2/bin/Rgui.exe "$@"

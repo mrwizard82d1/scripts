@@ -178,6 +178,8 @@ then
     alias rdoc='/cygdrive/c/Ruby187/bin/rdoc.bat'
     alias ri='/cygdrive/c/Ruby187/bin/ri.bat'
     alias rm_usb='~/professional/software/system/drivetools/RemoveDrive.exe'
+    alias roundup_admin='python -c "from roundup.scripts.roundup_admin import run; run()"'
+    alias roundup_server='python -c "from roundup.scripts.roundup_server import run; run()"'
     alias rspec='/cygdrive/c/Ruby187/bin/rspec.bat'
     alias ruby='/cygdrive/c/Ruby187/bin/ruby.exe'
     alias spec='/cygdrive/c/ruby187/bin/spec.bat'

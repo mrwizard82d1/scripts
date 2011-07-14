@@ -131,9 +131,9 @@ then
     alias eclipse_j2ee='/cygdrive/c/eclipse-j2ee/eclipse.exe'
     alias eject='~/professional/software/system/drivetools/EjectMedia.exe'
     alias emacs="/cygdrive/c/emacs-23.2/bin/runemacs.exe -geometry $EMACS_SIZE"
-    alias erl='/cygdrive/c/PROGRA~1/erl5.8.1.1/bin/erl.exe -smp'
-    alias erlc='/cygdrive/c/PROGRA~1/erl5.8.1.1/bin/erlc.exe'
-    alias escript='/cygdrive/c/PROGRA~1/erl5.8.1.1/bin/escript.exe'
+    alias erl='/cygdrive/c/PROGRA~1/erl5.8.4/bin/erl.exe -smp'
+    alias erlc='/cygdrive/c/PROGRA~1/erl5.8.4/bin/erlc.exe'
+    alias escript='/cygdrive/c/PROGRA~1/erl5.8.4/bin/escript.exe'
     alias find_grep='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
     alias jed='/cygdrive/c/PROGRA~1/JED/bin/jed.exe'
@@ -185,5 +185,6 @@ then
     alias spec='/cygdrive/c/ruby187/bin/spec.bat'
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
     alias scmv74='/cygdrive/c/PROGRA~1/AspenTech/aspenmimi/Bin/AspenTech.SCM.UI.Shell.exe'
+    alias werl='/cygdrive/c/PROGRA~1/erl5.8.4/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~1/JED/bin/wjed.exe'
 fi

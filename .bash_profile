@@ -125,7 +125,6 @@ then
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
     alias clj='java -cp $(cygpath -w ~/professional/software/languages/clojure/clojure-1.2.0/clojure.jar)\;$(cygpath -w ~/professional/software/languages/clojure/clojure-contrib-1.2.0/target/clojure-contrib-1.2.0.jar) clojure.main'
     alias clr-clj=~/professional/software/languages/clojure/clojure-clr-1.2.0/Clojure.Main.exe
-    alias cucumber='/cygdrive/c/Ruby187/bin/cucumber.bat'
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
     alias eclipse_j2ee='/cygdrive/c/eclipse-j2ee/eclipse.exe'
@@ -138,7 +137,6 @@ then
     alias inst_profile='cp .bash_profile ~/.bash_profile'
     alias jed='/cygdrive/c/PROGRA~1/JED/bin/jed.exe'
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
-    alias gem='/cygdrive/c/Ruby187/bin/gem.bat'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias igem='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/igem.bat'
     alias ilettuce='ipy $(cygpath -w /cygdrive/c/PROGRA~1/IRONPY~1.7/Lib/site-packages/lettuce/commands.py)'

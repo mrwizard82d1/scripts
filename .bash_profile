@@ -124,7 +124,9 @@ then
     alias ant='${ANT_HOME}/bin/ant.bat'
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
     alias clj='java -cp $(cygpath -w ~/professional/software/languages/clojure/clojure-1.2.0/clojure.jar)\;$(cygpath -w ~/professional/software/languages/clojure/clojure-contrib-1.2.0/target/clojure-contrib-1.2.0.jar) clojure.main'
-    alias clr-clj=~/professional/software/languages/clojure/clojure-clr-1.2.0/Clojure.Main.exe
+    alias clr-clj='clr-clj-13'
+    alias clr-clj-12=~/professional/software/languages/clojure/clojure-clr-1.2.0/Clojure.Main.exe
+    alias clr-clj-13=~/professional/software/languages/clojure/DEBUG4~1.0/Clojure.Main.exe
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
     alias eclipse_j2ee='/cygdrive/c/eclipse-j2ee/eclipse.exe'
@@ -139,8 +141,9 @@ then
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias igem='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/igem.bat'
-    alias ilettuce='ipy $(cygpath -w /cygdrive/c/PROGRA~1/IRONPY~1.7/Lib/site-packages/lettuce/commands.py)'
+    alias ilettuce='ipy $(cygpath -wd /cygdrive/c/Program\ Files/IronPython\ 2.7.1\ Beta\ 2/Lib/site-packages/lettuce/lettuce_cli.py)'
     alias iirb='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/iirb.bat'
+    alias inosetests='ipy $(cygpath -wd /cygdrive/c/Program\ Files/IronPython\ 2.7.1\ Beta\ 2/Lib/site-packages/nose/core.py)'
     alias ipy='ipy27'
     alias ipy26='/cygdrive/c/PROGRA~1/IronPython\ 2.6/ipy.exe'
     alias ipy26_40='/cygdrive/c/PROGRA~1/IronPython\ 2.6\ for\ .NET\ 4.0/ipy.exe'
@@ -159,6 +162,7 @@ then
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
     alias manage_mapped_drives='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
     alias nant='/usr/local/bin/nant-0.85/bin/NAnt.exe'
+    alias nosetests=/cygdrive/c/Python27/Scripts/nosetests.exe
     alias path_as_list='python $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
     alias path2svnurl='python $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py)'
     alias pn='/cygdrive/c/PROGRA~1/PROGRA~1/pn.exe'

@@ -123,7 +123,8 @@ if [ $TERM = cygwin ]
 then
     alias ant='${ANT_HOME}/bin/ant.bat'
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
-    alias clj='java -cp $(cygpath -w ~/professional/software/languages/clojure/clojure-1.2.0/clojure.jar)\;$(cygpath -w ~/professional/software/languages/clojure/clojure-contrib-1.2.0/target/clojure-contrib-1.2.0.jar) clojure.main'
+    alias clj='java -cp $(cygpath -w ~/professional/software/languages/clojure/clojure-1.3.0-RC0/clojure-1.3.0-RC0.jar)\;$(cygpath -w ~/professional/software/languages/clojure/clojure-contrib-1.2.0/target/clojure-contrib-1.2.0.jar) clojure.main'
+    alias clj12='java -cp $(cygpath -w ~/professional/software/languages/clojure/clojure-1.2.0/clojure.jar)\;$(cygpath -w ~/professional/software/languages/clojure/clojure-contrib-1.2.0/target/clojure-contrib-1.2.0.jar) clojure.main'
     alias clr-clj='clr-clj-13'
     alias clr-clj-12=~/professional/software/languages/clojure/clojure-clr-1.2.0/Clojure.Main.exe
     alias clr-clj-13=~/professional/software/languages/clojure/DEBUG4~1.0/Clojure.Main.exe

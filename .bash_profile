@@ -128,6 +128,7 @@ then
     alias clr-clj='clr-clj-13'
     alias clr-clj-12=~/professional/software/languages/clojure/clojure-clr-1.2.0/Clojure.Main.exe
     alias clr-clj-13=~/professional/software/languages/clojure/DEBUG4~1.0/Clojure.Main.exe
+    alias cucumber='/cygdrive/c/Ruby192/bin/cucumber.bat'
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
     alias eclipse_j2ee='/cygdrive/c/eclipse-j2ee/eclipse.exe'
@@ -137,6 +138,7 @@ then
     alias erlc='/cygdrive/c/PROGRA~1/erl5.8.4/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl5.8.4/bin/escript.exe'
     alias find_grep='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
+    alias gem='/cygdrive/c/Ruby192/bin/gem.bat'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
     alias jed='/cygdrive/c/PROGRA~1/JED/bin/jed.exe'
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
@@ -173,6 +175,7 @@ then
     alias python27='/cygdrive/c/Python27/python.exe'
     alias python31='/cygdrive/c/Python31/python.exe'
     alias R='/cygdrive/c/PROGRA~1/R/R-2.9.2/bin/Rgui.exe'
+    alias rspec='/cygdrive/c/Ruby192/bin/rspec.bat'
     alias Rterm='/cygdrive/c/PROGRA~1/R/R-2.9.2/bin/Rterm.exe'
     alias rm_usb='~/professional/software/system/drivetools/RemoveDrive.exe'
     alias roundup_admin='python -c "from roundup.scripts.roundup_admin import run; run()"'

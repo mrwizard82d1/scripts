@@ -157,6 +157,7 @@ then
     alias ipycc27='/cygdrive/c/Program\ Files/IronPython\ 2.7.1\ Beta\ 2/ipy.exe -X:TabCompletion -X:ColorfulConsole'
     alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
+    alias irb='/cygdrive/c/Ruby192/bin/irb.bat'
     alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.6.0_26/bin/jar.exe'
     alias java='/cygdrive/c/PROGRA~1/Java/jdk1.6.0_26/bin/java.exe'
     alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.6.0_26/bin/javac.exe'

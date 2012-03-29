@@ -5,7 +5,6 @@
 case `hostname` in
     bullwinkle) EMACS_SIZE=80x48;;
     Ginny-PC) EMACS_SIZE=80x40;;
-    SLB-7TPKGQ1 ) EMACS_SIZE=80x55;;
     *) EMACS_SIZE=80x50;;
 esac
 
@@ -28,12 +27,6 @@ function tarit()
 function untarit()
 {
     tar -zxf ${1}.tgz
-}
-
-# Quickly change to directories of interest.
-function downloads()
-{
-    cd ~/Documents/downloads
 }
 
 function software()

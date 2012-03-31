@@ -141,6 +141,7 @@ then
     alias gem='/cygdrive/c/Ruby193/bin/gem.bat'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
     alias jed='/cygdrive/c/PROGRA~1/JED/bin/jed.exe'
+    alias git='/cygdrive/c/PROGRA~1/Git/cmd/git.cmd'
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias igem='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/igem.bat'

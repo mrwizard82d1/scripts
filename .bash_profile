@@ -161,6 +161,7 @@ then
     alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
     alias manage_mapped_drives='/cygdrive/c/Python31/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
+    alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant='/usr/local/bin/nant-0.85/bin/NAnt.exe'
     alias nosetests=/cygdrive/c/Python27/Scripts/nosetests.exe
     alias path_as_list='python $(cygpath -w ~/professional/projects/pyutils/path2list.py)'

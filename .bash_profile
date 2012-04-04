@@ -1,9 +1,6 @@
 # (Bash) Shell startup script.
 
 
-# (Bash) Shell startup script.
-
-
 # Configure the editor for svn, git and hg.
 if [ $TERM = cygwin ]
 then
@@ -99,13 +96,13 @@ then
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias igem='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/igem.bat'
-    alias ilettuce='ipy $(cygpath -wd /cygdrive/c/Program\ Files/IronPython\ 2.7.1\ RC\ 1/Lib/site-packages/lettuce/lettuce_cli.py)'
+    alias ilettuce='ipy $(cygpath -wd /cygdrive/c/Program\ Files/IronPython\ 2.7/Lib/site-packages/lettuce/lettuce_cli.py)'
     alias iirb='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/iirb.bat'
-    alias inosetests='ipy $(cygpath -wd /cygdrive/c/Program\ Files/IronPython\ 2.7.1\ RC\ 1/Lib/site-packages/nose/core.py)'
+    alias inosetests='ipy $(cygpath -wd /cygdrive/c/Program\ Files/IronPython\ 2.7/Lib/site-packages/nose/core.py)'
     alias ipy='ipy27'
-    alias ipy27='/cygdrive/c/Program\ Files/IronPython\ 2.7.1/ipy.exe'
+    alias ipy27='/cygdrive/c/Program\ Files/IronPython\ 2.7/ipy.exe'
     alias ipycc='ipycc27'
-    alias ipycc27='/cygdrive/c/Program\ Files/IronPython\ 2.7.1/ipy.exe -X:TabCompletion -X:ColorfulConsole'
+    alias ipycc27='/cygdrive/c/Program\ Files/IronPython\ 2.7/ipy.exe -X:TabCompletion -X:ColorfulConsole'
     alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='/cygdrive/c/Ruby192/bin/irb.bat'

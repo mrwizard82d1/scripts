@@ -44,6 +44,12 @@ function untarit()
     tar -zxf ${1}.tgz
 }
 
+function wtarit()
+{
+    tar -zcf ${1}-$(hostname).tgz --exclude=.svn ${1}
+}
+
+# Quickly change to directories of interest
 function software()
 {
     cd ~/professional/software/${1}

@@ -1,5 +1,11 @@
 # Script to mount Windows shares.
 
+if [ $# -lt 2 ]
+then
+	echo "Usage: rocky <name_or_ip_address> <password>"
+	exit 1
+fi
+
 mount -t cifs //$1/LarryDocs /media/LarryDocs -o username=Larry,password=$2,rw,iocharset=utf8,file_mode=0777,dir_mode=0777
 
 

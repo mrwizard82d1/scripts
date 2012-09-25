@@ -2,7 +2,7 @@
 
 if [ $# -lt 2 ]
 then
-	echo "Usage: rocky <name_or_ip_address> <password>"
+	echo "Usage: mount_shares <name_or_ip_address> <password>"
 	exit 1
 fi
 

@@ -1,6 +1,10 @@
 # (Bash) Shell startup script.
 
 
+# Include ~/.bashrc if available.
+[[ -r ~/.bashrc ]] && source ~/.bashrc
+
+
 # Configure the editor for svn, git and hg.
 if [ $TERM = cygwin ]
 then
@@ -9,7 +13,7 @@ then
     export EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
 elif [ $TERM = xterm ]
 then
-    PS1='\u@\h $ '
+    PS1='\u@\h \W$ '
     export GIT_EDITOR=xjed
     export EDITOR=xjed
 fi
@@ -141,3 +145,6 @@ then
     alias werl='/cygdrive/c/PROGRA~1/erl5.9.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~1/JED/bin/wjed.exe'
 fi
+
+proml
+

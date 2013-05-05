@@ -19,10 +19,11 @@ fi
 
 
 # Configure emacs screen sizes
+export EMACS_SIZE=80x50
 case `hostname` in
     bullwinkle) EMACS_SIZE=80x48;;
     Ginny-PC) EMACS_SIZE=80x40;;
-    *) EMACS_SIZE=80x50;;
+    swilliams-PC) EMACS_SIZE=80x43;;
 esac
 
 

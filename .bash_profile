@@ -23,7 +23,7 @@ export EMACS_SIZE=80x50
 case `hostname` in
     bullwinkle) EMACS_SIZE=80x48;;
     Ginny-PC) EMACS_SIZE=80x40;;
-    swilliams-PC) EMACS_SIZE=132x43;;
+    swilliams-PC) EMACS_SIZE=80x43;;
 esac
 
 

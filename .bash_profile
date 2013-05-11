@@ -1,10 +1,6 @@
 # (Bash) Shell startup script.
 
 
-# Include ~/.bashrc if available.
-[[ -r ~/.bashrc ]] && source ~/.bashrc
-
-
 # Configure the editor for svn, git and hg.
 if [ $TERM = cygwin ]
 then
@@ -27,5 +23,10 @@ case `hostname` in
 esac
 
 
+# Include ~/.bashrc if available.
+[[ -r ~/.bashrc ]] && source ~/.bashrc
+
+
 # proml
+
 

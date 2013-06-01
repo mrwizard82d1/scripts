@@ -127,7 +127,7 @@ then
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
     alias eclipse_j2ee='/cygdrive/c/eclipse-j2ee/eclipse.exe'
     alias eject='~/professional/software/system/drivetools/EjectMedia.exe'
-    alias emacs="/cygdrive/c/emacs-24.3/bin/runemacs.exe -geometry $EMACS_SIZE"
+    alias emacs="/cygdrive/d/emacs-24.3/bin/runemacs.exe -geometry $EMACS_SIZE"
     alias erl='/cygdrive/c/PROGRA~1/erl5.10.1/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl5.10.1/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl5.10.1/bin/escript.exe'

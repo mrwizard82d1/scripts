@@ -111,6 +111,34 @@ function whitepapers()
     cd ~/professional/whitepapers/${1}
 }
 
+# Quickly change to work directories
+
+function nwing() 
+{
+    cd ~/work/projects/nwing/${1}
+}
+
+function src() 
+{
+    cd ~/work/src/${1}
+}
+
+function supernova() 
+{
+    cd ~/work/projects/supernova/${1}
+}
+
+function test() 
+{
+    cd ~/work/test/${1}
+}
+
+
+function work_proj() 
+{
+    cd ~/work/test/projects/${1}
+}
+
 
 # Aliases
 if [ $TERM = cygwin ]

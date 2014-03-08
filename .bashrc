@@ -178,7 +178,7 @@ then
     alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.6.0_26/bin/jar.exe'
     alias java='/cygdrive/c/PROGRA~1/Java/jdk1.6.0_26/bin/java.exe'
     alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.6.0_26/bin/javac.exe'
-    alias lein='/usr/local/bin/lein.bat'
+    alias lein='~/.lein/bin/lein.bat'
     alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
     alias manage_mapped_drives='/cygdrive/c/Python33/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'

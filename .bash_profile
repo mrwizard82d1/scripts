@@ -4,9 +4,9 @@
 # Configure the editor for svn, git and hg.
 if [ $TERM = cygwin ]
 then
-    export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
-    export GIT_EDITOR=\'$(cygpath -wa /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)\'
-    export EDITOR=$(cygpath -w /cygdrive/c/PROGRA~1/JED/bin/wjed.exe)
+    export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)
+    export GIT_EDITOR=\'$(cygpath -wa /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)\'
+    export EDITOR=$(cygpath -w /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)
 elif [ $TERM = xterm ]
 then
     export GIT_EDITOR=xjed

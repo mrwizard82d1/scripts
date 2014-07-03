@@ -157,9 +157,9 @@ then
     alias eclipse_j2ee='/cygdrive/c/eclipse-j2ee/eclipse.exe'
     alias eject='~/professional/software/system/drivetools/EjectMedia.exe'
     alias emacs="/cygdrive/d/emacs-24.3/bin/runemacs.exe -geometry $EMACS_SIZE"
-    alias erl='/cygdrive/c/PROGRA~1/erl5.10.3/bin/erl.exe -smp'
-    alias erlc='/cygdrive/c/PROGRA~1/erl5.10.3/bin/erlc.exe'
-    alias escript='/cygdrive/c/PROGRA~1/erl5.10.3/bin/escript.exe'
+    alias erl='/cygdrive/c/PROGRA~1/erl6.1/bin/erl.exe -smp'
+    alias erlc='/cygdrive/c/PROGRA~1/erl6.1/bin/erlc.exe'
+    alias escript='/cygdrive/c/PROGRA~1/erl6.1/bin/escript.exe'
     alias find_grep='/cygdrive/c/Python33/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
     alias gem='/cygdrive/c/Ruby193/bin/gem.bat'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
@@ -205,7 +205,7 @@ then
     alias roundup_admin='python -c "from roundup.scripts.roundup_admin import run; run()"'
     alias roundup_server='python -c "from roundup.scripts.roundup_server import run; run()"'
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
-    alias werl='/cygdrive/c/PROGRA~1/erl5.10.3/bin/werl.exe'
+    alias werl='/cygdrive/c/PROGRA~1/erl6.1/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
 fi
 

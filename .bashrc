@@ -156,6 +156,8 @@ then
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
     alias eclipse_j2ee='/cygdrive/c/eclipse-j2ee/eclipse.exe'
     alias eject='~/professional/software/system/drivetools/EjectMedia.exe'
+    alias elixir='~/professional/software/languages/elixir/v0.14.2/bin/elixir.bat'
+    alias elixirc='~/professional/software/languages/elixir/v0.14.2/bin/elixirc.bat'
     alias emacs="/cygdrive/d/emacs-24.3/bin/runemacs.exe -geometry $EMACS_SIZE"
     alias erl='/cygdrive/c/PROGRA~1/erl6.1/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.1/bin/erlc.exe'
@@ -166,6 +168,7 @@ then
     alias jed='/cygdrive/c/PROGRA~2/JED/bin/jed.exe'
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
+    alias iex='~/professional/software/languages/elixir/v0.14.2/bin/iex.bat'
     alias igem='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/igem.bat'
     alias ilettuce='ipy $(cygpath -wd /cygdrive/c/PROGRA~1/IronPython\ 2.7/Lib/site-packages/lettuce/lettuce_cli.py)'
     alias iirb='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/iirb.bat'

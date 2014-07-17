@@ -187,6 +187,7 @@ then
     alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.7.0_51/bin/javac.exe'
     alias lein='~/.lein/bin/lein.bat'
     alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
+    alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
     alias manage_mapped_drives='/cygdrive/c/Python33/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
     alias mysql='/cygdrive/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'

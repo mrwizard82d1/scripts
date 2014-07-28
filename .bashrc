@@ -206,6 +206,7 @@ then
     alias R='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
     alias rspec='/cygdrive/c/Ruby193/bin/rspec.bat'
     alias Rterm='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
+    alias rm_gen_bin='python $(cygpath -wa ~/professional/projects/pyutils/rm_gen_bin.py)'
     alias rm_usb='~/professional/software/system/drivetools/RemoveDrive.exe'
     alias roundup_admin='python -c "from roundup.scripts.roundup_admin import run; run()"'
     alias roundup_server='python -c "from roundup.scripts.roundup_server import run; run()"'

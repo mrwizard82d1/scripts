@@ -148,9 +148,10 @@ then
     alias clj='clj-151'
     alias clj-151='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.5.1/clojure-1.5.1.jar) clojure.main'
     alias clj12='java -cp $(cygpath -w ~/professional/software/languages/clojure/clojure-1.2.0/clojure.jar)\;$(cygpath -w ~/professional/software/languages/clojure/clojure-contrib-1.2.0/target/clojure-contrib-1.2.0.jar) clojure.main'
-    alias clj-clr='clj-clr-14'
-    alias clj-clr-14=~/professional/software/languages/clojure-clr/Debug-4.0/Clojure.Main.exe
-    alias clj-clr-151=~/professional/software/languages/clojure-clr/Debug-1.5.1-4.0/Clojure.Main.exe
+    alias clj-clr='clj-clr-150'
+    alias clj-clr-14=~/professional/software/languages/clojure-clr/Debug-14/Clojure.Main.exe
+    alias clj-clr-150=~/professional/software/languages/clojure-clr/Release/Clojure.Main.exe
+    alias clj-clr-150-dbg=~/professional/software/languages/clojure-clr/Debug/Clojure.Main.exe
     alias cucumber='/cygdrive/c/Ruby193/bin/cucumber.bat'
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'

@@ -211,6 +211,9 @@ then
     alias roundup_admin='python -c "from roundup.scripts.roundup_admin import run; run()"'
     alias roundup_server='python -c "from roundup.scripts.roundup_server import run; run()"'
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
+    alias svn='/cygdrive/c/Program\ Files/TortoiseSVN/bin/svn.exe'
+    alias vim='vim.bat'
+    alias gvim='gvim.bat'
     alias werl='/cygdrive/c/PROGRA~1/erl6.1/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
 fi

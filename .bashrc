@@ -170,6 +170,7 @@ then
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias iex='/cygdrive/c/PROGRA~2/Elixir/bin/iex.bat'
+    alias iexw='/cygdrive/c/PROGRA~2/Elixir/bin/iex.bat --werl'
     alias igem='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/igem.bat'
     alias ilettuce='ipy $(cygpath -wd /cygdrive/c/PROGRA~1/IronPython\ 2.7/Lib/site-packages/lettuce/lettuce_cli.py)'
     alias iirb='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/iirb.bat'

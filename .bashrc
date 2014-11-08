@@ -196,7 +196,7 @@ then
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant='/usr/local/bin/nant-0.85/bin/NAnt.exe'
     alias nosetests=/cygdrive/d/Python27/Scripts/nosetests.exe
-    alias npp='/cygdrive/c/PROGRA~2/NOTEPA~1/npp.exe'
+    alias npp='/cygdrive/c/PROGRA~2/NOTEPA~1/notepad++.exe'
     alias path_as_list='python $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
     alias path2svnurl='python $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py)'
     alias pn='/cygdrive/c/PROGRA~2/PROGRA~1/pn.exe'

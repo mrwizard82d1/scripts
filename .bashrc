@@ -141,7 +141,7 @@ function work_proj()
 
 
 # Aliases
-if [ $TERM = cygwin ]
+if [ $TERM = cygwin -o $TERM = xterm-256color ]
 then
     alias ant='${ANT_HOME}/bin/ant.bat'
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
@@ -163,7 +163,7 @@ then
     alias erl='/cygdrive/c/PROGRA~1/erl6.1/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.1/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl6.1/bin/escript.exe'
-    alias find_grep='/cygdrive/c/Python33/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
+    alias find_grep='/cygdrive/d/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
     alias gem='/cygdrive/c/Ruby193/bin/gem.bat'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
     alias jed='/cygdrive/c/PROGRA~2/JED/bin/jed.exe'
@@ -188,22 +188,22 @@ then
     alias java='/cygdrive/c/PROGRA~1/Java/jdk1.7.0_51/bin/java.exe'
     alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.7.0_51/bin/javac.exe'
     alias lein='~/.lein/bin/lein.bat'
-    alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
+    alias lettuce='/cygdrive/d/Python27/Scripts/lettuce.exe'
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
-    alias manage_mapped_drives='/cygdrive/c/Python33/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
+    alias manage_mapped_drives='/cygdrive/d/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
     alias mysql='/cygdrive/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant='/usr/local/bin/nant-0.85/bin/NAnt.exe'
-    alias nosetests=/cygdrive/c/Python27/Scripts/nosetests.exe
+    alias nosetests=/cygdrive/d/Python27/Scripts/nosetests.exe
+    alias npp='/cygdrive/c/PROGRA~2/NOTEPA~1/npp.exe'
     alias path_as_list='python $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
     alias path2svnurl='python $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py)'
     alias pn='/cygdrive/c/PROGRA~2/PROGRA~1/pn.exe'
-    alias pip='/cygdrive/c/Python27/Scripts/pip'
+    alias pip='/cygdrive/d/Python27/Scripts/pip'
     alias python='python27'
-    alias python27='/cygdrive/c/Python27/python.exe'
-    alias python32='/cygdrive/c/Python32/python.exe'
-    alias python33='/cygdrive/c/Python33/python.exe'
+    alias python27='/cygdrive/d/Python27/python.exe'
+    alias python34='/cygdrive/d/Python34/python.exe'
     alias R='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
     alias rspec='/cygdrive/c/Ruby193/bin/rspec.bat'
     alias Rterm='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'

@@ -2,7 +2,7 @@
 
 
 # Configure the editor for svn, git and hg.
-if [ $TERM = cygwin ]
+if [ $TERM = cygwin -o $TERM = xterm-256color ]
 then
     export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)
 #    export GIT_EDITOR=\'$(cygpath -wa /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)\'
@@ -12,7 +12,7 @@ then
 elif [ $TERM = xterm ]
 then
     export GIT_EDITOR=xjed
-    export EDITOR=xjed
+    export EDITOR=xjed:
 fi
 
 

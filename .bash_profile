@@ -5,10 +5,10 @@
 if [ $TERM = cygwin -o $TERM = xterm-256color ]
 then
     export SVN_EDITOR=$(cygpath -w /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)
-#    export GIT_EDITOR=\'$(cygpath -wa /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)\'
-#    export EDITOR=$(cygpath -w /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)
-    export GIT_EDITOR=vim.bat
-    export EDITOR=/cygdrive/c/Windows/gvim.bat
+    export GIT_EDITOR=\'$(cygpath -wa /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)\'
+    export EDITOR=$(cygpath -w /cygdrive/c/PROGRA~2/JED/bin/wjed.exe)
+#    export GIT_EDITOR=vim.bat
+#    export EDITOR=/cygdrive/c/Windows/gvim.bat
 elif [ $TERM = xterm ]
 then
     export GIT_EDITOR=xjed

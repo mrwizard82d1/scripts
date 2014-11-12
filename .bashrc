@@ -160,9 +160,9 @@ then
     alias elixir='/cygdrive/c/PROGRA~2/Elixir/bin/elixir.bat'
     alias elixirc='/cygdrive/c/PROGRA~2/Elixir/bin/elixirc.bat'
     alias emacs="/cygdrive/d/emacs-24.3/bin/runemacs.exe -geometry $EMACS_SIZE"
-    alias erl='/cygdrive/c/PROGRA~1/erl6.1/bin/erl.exe -smp'
-    alias erlc='/cygdrive/c/PROGRA~1/erl6.1/bin/erlc.exe'
-    alias escript='/cygdrive/c/PROGRA~1/erl6.1/bin/escript.exe'
+    alias erl='/cygdrive/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
+    alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
+    alias escript='/cygdrive/c/PROGRA~1/erl6.2/bin/escript.exe'
     alias find_grep='/cygdrive/d/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
     alias gem='/cygdrive/c/Ruby193/bin/gem.bat'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
@@ -215,7 +215,7 @@ then
     alias svn='/cygdrive/c/Program\ Files/TortoiseSVN/bin/svn.exe'
     alias vim='vim.bat'
     alias gvim='gvim.bat'
-    alias werl='/cygdrive/c/PROGRA~1/erl6.1/bin/werl.exe'
+    alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
 fi
 

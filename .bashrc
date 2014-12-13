@@ -145,13 +145,11 @@ if [ $TERM = cygwin -o $TERM = xterm-256color ]
 then
     alias ant='${ANT_HOME}/bin/ant.bat'
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
-    alias clj='clj-151'
-    alias clj-151='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.5.1/clojure-1.5.1.jar) clojure.main'
-    alias clj12='java -cp $(cygpath -w ~/professional/software/languages/clojure/clojure-1.2.0/clojure.jar)\;$(cygpath -w ~/professional/software/languages/clojure/clojure-contrib-1.2.0/target/clojure-contrib-1.2.0.jar) clojure.main'
-    alias clj-clr='clj-clr-150'
-    alias clj-clr-14=~/professional/software/languages/clojure-clr/Debug-14/Clojure.Main.exe
-    alias clj-clr-150=~/professional/software/languages/clojure-clr/Release/Clojure.Main.exe
-    alias clj-clr-150-dbg=~/professional/software/languages/clojure-clr/Debug/Clojure.Main.exe
+    alias clj='clj-160'
+    alias clj-160='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main'
+    alias clj-clr='clj-clr-160'
+    alias clj-clr-160="~/professional/software/languages/clojure-clr/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-160-dbg="~/professional/software/languages/clojure-clr/Debug\ 4.0/Clojure.Main.exe"
     alias cucumber='/cygdrive/c/Ruby193/bin/cucumber.bat'
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
@@ -184,9 +182,9 @@ then
     alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='/cygdrive/c/Ruby193/bin/irb.bat'
-    alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.7.0_51/bin/jar.exe'
-    alias java='/cygdrive/c/PROGRA~1/Java/jdk1.7.0_51/bin/java.exe'
-    alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.7.0_51/bin/javac.exe'
+    alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_25/bin/jar.exe'
+    alias java='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_25/bin/java.exe'
+    alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_25/bin/javac.exe'
     alias lein='~/.lein/bin/lein.bat'
     alias lettuce='/cygdrive/d/Python27/Scripts/lettuce.exe'
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe

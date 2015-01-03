@@ -190,6 +190,7 @@ then
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
     alias manage_mapped_drives='/cygdrive/d/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
+	alias mix="/cygdrive/c/PROGRA~2/Elixir/bin/mix.bat"
     alias mysql='/cygdrive/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant='/usr/local/bin/nant-0.85/bin/NAnt.exe'

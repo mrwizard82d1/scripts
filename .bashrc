@@ -113,19 +113,14 @@ function whitepapers()
 
 # Quickly change to work directories
 
-function nwing() 
-{
-    cd ~/work/projects/nwing/${1}
-}
-
 function src() 
 {
-    cd ~/work/src/${1}
+    cd /cygdrive/c/src/${1}
 }
 
-function supernova() 
+function rightangle() 
 {
-    cd ~/work/projects/supernova/${1}
+    cd ~/work/projects/rightangle/${1}
 }
 
 function test() 
@@ -204,6 +199,7 @@ then
     alias python27='/cygdrive/c/Python27/python.exe'
     alias python34='/cygdrive/c/Python34/python.exe'
     alias R='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
+    alias ra12='/cygdrive/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rspec='/cygdrive/c/Ruby193/bin/rspec.bat'
     alias Rterm='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
     alias rm_gen_bin='python $(cygpath -wa ~/professional/projects/pyutils/rm_gen_bin.py)'

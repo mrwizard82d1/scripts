@@ -160,6 +160,7 @@ then
     alias gem='/cygdrive/c/Ruby193/bin/gem.bat'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
     alias jed='/cygdrive/c/PROGRA~2/JED/bin/jed.exe'
+    alias gvim='gvim.bat'
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias iex='/cygdrive/c/PROGRA~2/Elixir/bin/iex.bat'
@@ -209,7 +210,8 @@ then
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
     alias svn='/cygdrive/c/Program\ Files/TortoiseSVN/bin/svn.exe'
     alias vim='vim.bat'
-    alias gvim='gvim.bat'
+    alias vs_2010='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~2.0/VC/vcvarsall.bat) x86"'
+    alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
 fi

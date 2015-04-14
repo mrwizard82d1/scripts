@@ -178,9 +178,9 @@ then
     alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='/cygdrive/c/Ruby21-x64/bin/irb.bat'
-    alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_40/bin/jar.exe'
-    alias java='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_40/bin/java.exe'
-    alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_40/bin/javac.exe'
+    alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_45/bin/jar.exe'
+    alias java='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_45/bin/java.exe'
+    alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_45/bin/javac.exe'
     alias lein='~/.lein/bin/lein.bat'
     alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe

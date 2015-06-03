@@ -131,7 +131,7 @@ function test()
 
 function work_proj() 
 {
-    cd ~/work/test/projects/${1}
+    cd ~/work/projects/${1}
 }
 
 
@@ -209,6 +209,7 @@ then
     alias Rterm='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
 #    alias ruby='/cygdrive/c/Ruby21-x64/bin/ruby.exe'
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
+    alias st='/cygdrive/c/PROGRA~2/SUBLIM~1/sublime_text.exe'
     alias svn='/cygdrive/c/Program\ Files/TortoiseSVN/bin/svn.exe'
     alias vim='vim.bat'
     alias vs_2010='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~2.0/VC/vcvarsall.bat) x86"'

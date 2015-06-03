@@ -60,6 +60,7 @@
 # }
 
 # Utility functions
+CYGHOME=/c/cygwin64/home/ljones
 function latest()
 {
     ls -ltd ${1} | head ${2}
@@ -88,27 +89,27 @@ function wtarit()
 # Quickly change to directories of interest
 function software()
 {
-    cd /c/cygwin64/home/ljones/professional/software/${1}
+    cd $CYGHOME/professional/software/${1}
 }
 
 function projects()
 {
-    cd /c/cygwin64/home/ljones/professional/projects/${1}
+    cd $CYGHOME/professional/projects/${1}
 }
 
 function software()
 {
-    cd /c/cygwin64/home/ljones/professional/software/${1}
+    cd $CYGHOME/professional/software/${1}
 }
 
 function sts()
 {
-    cd /c/cygwin64/home/ljones/sharpen-the-saw/${1}
+    cd $CYGHOME/sharpen-the-saw/${1}
 }
 
 function whitepapers()
 {
-    cd /c/cygwin64/home/ljones/professional/whitepapers/${1}
+    cd $CYGHOME/professional/whitepapers/${1}
 }
 
 # Quickly change to work directories
@@ -120,18 +121,18 @@ function src()
 
 function rightangle() 
 {
-    cd /c/cygwin64/home/ljones/work/projects/rightangle/${1}
+    cd $CYGHOME/work/projects/rightangle/${1}
 }
 
 function test() 
 {
-    cd /c/cygwin64/home/ljones/work/test/${1}
+    cd $CYGHOME/work/test/${1}
 }
 
 
 function work_proj() 
 {
-    cd /c/cygwin64/home/ljones/work/test/projects/${1}
+    cd $CYGHOME/work/projects/${1}
 }
 
 # Configure emacs screen sizes
@@ -148,24 +149,24 @@ then
     alias ant='${ANT_HOME}/bin/ant.bat'
     alias aspell='/c/PROGRA~1/Aspell/bin/aspell.exe'
     alias clj='clj-160'
-    alias clj-160='java -cp $(cygpath -wa /c/cygwin64/home/ljones/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main'
+    alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"
     alias clj-clr='clj-clr-160'
-    alias clj-clr-160="/c/cygwin64/home/ljones/professional/software/languages/clojure-clr/Release\ 4.0/Clojure.Main.exe"
-    alias clj-clr-160-dbg="/c/cygwin64/home/ljones/professional/software/languages/clojure-clr/Debug\ 4.0/Clojure.Main.exe"
+    alias clj-clr-160="$CYGHOME/professional/software/languages/clojure-clr/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-160-dbg="$CYGHOME/professional/software/languages/clojure-clr/Debug\ 4.0/Clojure.Main.exe"
     alias cucumber='/c/Ruby21-x64/bin/cucumber.bat'
     alias doxygen='/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/c/eclipse/eclipse.exe'
     alias eclipse_j2ee='/c/eclipse-j2ee/eclipse.exe'
-    alias eject='/c/cygwin64/home/ljones/professional/software/system/drivetools/EjectMedia.exe'
+    alias eject="$CYGHOME/professional/software/system/drivetools/EjectMedia.exe"
     alias elixir='/c/PROGRA~2/Elixir/bin/elixir.bat'
     alias elixirc='/c/PROGRA~2/Elixir/bin/elixirc.bat'
     alias emacs="/c/emacs-24.4/bin/runemacs.exe -geometry $EMACS_SIZE"
     alias erl='/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/c/PROGRA~1/erl6.2/bin/escript.exe'
-    alias find_grep='/c/Python34/python.exe $(cygpath -w /c/cygwin64/home/ljones/professional/projects/pyutils/find_grep.py)'
+    alias find_grep="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/find_grep.py)"
     alias gem='cmd //c /c/Ruby21-x64/bin/gem.bat'
-    alias inst_profile='cp .bash_profile /c/cygwin64/home/ljones/.bash_profile'
+    alias inst_profile="cp .bash_profile $CYGHOME/.bash_profile"
     alias jed='/c/PROGRA~2/JED/bin/jed.exe'
     alias gvim='gvim.bat'
     alias hg='/c/PROGRA~1/TortoiseHg/hg.exe'
@@ -188,19 +189,19 @@ then
     alias jar='/c/PROGRA~1/Java/jdk1.8.0_45/bin/jar.exe'
     alias java='/c/PROGRA~1/Java/jdk1.8.0_45/bin/java.exe'
     alias javac='/c/PROGRA~1/Java/jdk1.8.0_45/bin/javac.exe'
-    alias lein='/c/cygwin64/home/ljones/.lein/bin/lein.bat'
+    alias lein="$CYGHOME/.lein/bin/lein.bat"
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
-    alias lighttable=/c/cygwin64/home/ljones/professional/software/devtools/light_table/LightTable/LightTable.exe
-    alias list_usb='/c/cygwin64/home/ljones/professional/software/system/drivetools/ListUsbDrives.exe'
-    alias manage_mapped_drives='/c/Python34/python.exe $(cygpath -w /c/cygwin64/home/ljones/professional/projects/pyutils/manage_mapped_drives.py)'
+    alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe
+    alias list_usb="$CYGHOME/professional/software/system/drivetools/ListUsbDrives.exe"
+    alias manage_mapped_drives="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/manage_mapped_drives.py)"
 	alias mix="/c/PROGRA~2/Elixir/bin/mix.bat"
     alias mysql='/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
-    alias name_2_ip_addr='ipy $(cygpath -w /c/cygwin64/home/ljones/professional/projects/ipyutils/name_to_ip_addr.py)'
+    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
     alias nant='/usr/local/bin/nant-0.85/bin/NAnt.exe'
     alias nosetests=/c/Python27/Scripts/nosetests.exe
     alias npp='/c/PROGRA~2/NOTEPA~1/notepad++.exe'
-    alias path_as_list='python $(cygpath -w /c/cygwin64/home/ljones/professional/projects/pyutils/path2list.py)'
-    alias path2svnurl='python $(cygpath -w /c/cygwin64/home/ljones/professional/projects/pyutils/dirname_to_svn_url.py)'
+    alias path_as_list="python $(cygpath -w $CYGHOME/professional/projects/pyutils/path2list.py)"
+    alias path2svnurl="python $(cygpath -w $CYGHOME/professional/projects/pyutils/dirname_to_svn_url.py)"
     alias pn='/c/PROGRA~2/PROGRA~1/pn.exe'
     alias pip='/c/Python27/Scripts/pip'
     alias python='python27'
@@ -210,11 +211,12 @@ then
     alias ra12='/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rspec='/c/Ruby21-x64/bin/rspec.bat'
     alias Rterm='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
-    alias rm_gen_bin='python $(cygpath -wa /c/cygwin64/home/ljones/professional/projects/pyutils/rm_gen_bin.py)'
-    alias rm_usb='/c/cygwin64/home/ljones/professional/software/system/drivetools/RemoveDrive.exe'
+    alias rm_gen_bin="python $(cygpath -wa $CYGHOME/professional/projects/pyutils/rm_gen_bin.py)"
+    alias rm_usb="$CYGHOME/professional/software/system/drivetools/RemoveDrive.exe"
     alias roundup_admin='python -c "from roundup.scripts.roundup_admin import run; run()"'
     alias roundup_server='python -c "from roundup.scripts.roundup_server import run; run()"'
-    alias save_clipboard_image='ipy $(cygpath -w /c/cygwin64/home/ljones/professional/projects/ipyutils/save_clipboard_image.py)'
+    alias save_clipboard_image="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/save_clipboard_image.py)"
+    alias st='/c/PROGRA~2/SUBLIM~1/sublime_text.exe'
     alias svn='/c/Program\ Files/TortoiseSVN/bin/svn.exe'
     alias vim='vim.bat'
     alias vs_2010='start cmd /k /c/PROGRA~2/MICROS~2.0/VC/vcvarsall.bat x86'

@@ -39,7 +39,7 @@
 # fi
 
 # Function to change title bar
-# Shamelessly "stolen" from 
+# Shamelessly "stolen" from
 # http://tldp.org/HOWTO/Bash-Prompt-HOWTO/xterm-title-bar-manipulations.html
 # function proml
 # {
@@ -114,23 +114,23 @@ function whitepapers()
 
 # Quickly change to work directories
 
-function src() 
+function src()
 {
     cd /c/src/${1}
 }
 
-function rightangle() 
+function rightangle()
 {
     cd $CYGHOME/work/projects/rightangle/${1}
 }
 
-function test() 
+function test()
 {
     cd $CYGHOME/work/test/${1}
 }
 
 
-function work_proj() 
+function work_proj()
 {
     cd $CYGHOME/work/projects/${1}
 }
@@ -146,8 +146,14 @@ esac
 # Aliases
 if [ $TERM = cygwin -o $TERM = xterm-256color -o $TERM = msys ]
 then
+    # This definition for cygpath must come first so that I can use it in
+    # subsequent aliases.
+    alias cygpath=$CYGHOME/../../bin/cygpath.exe
+    #
+    #
     alias ant='${ANT_HOME}/bin/ant.bat'
     alias aspell='/c/PROGRA~1/Aspell/bin/aspell.exe'
+    alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'
     alias clj='clj-160'
     alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"
     alias clj-clr='clj-clr-160'
@@ -238,4 +244,3 @@ if [ $TERM = msys ]
 then
     alias gvim='cmd //c /c/Windows/gvim.bat'
 fi
-

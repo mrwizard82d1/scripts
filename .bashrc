@@ -28,7 +28,7 @@ if [ "$PS1" ]; then
   fi
   # Turn on checkwinsize
   shopt -s checkwinsize
-  [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u@\h \W]\\$ "
+  [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="\u@\h:\W \$ "
   # You might want to have e.g. tty in prompt (e.g. more virtual machines)
   # and console windows
   # If you want to do so, just add e.g.
@@ -39,7 +39,7 @@ if [ "$PS1" ]; then
 fi
 
 # Function to change title bar
-# Shamelessly "stolen" from 
+# Shamelessly "stolen" from
 # http://tldp.org/HOWTO/Bash-Prompt-HOWTO/xterm-title-bar-manipulations.html
 function proml
 {
@@ -113,23 +113,23 @@ function whitepapers()
 
 # Quickly change to work directories
 
-function src() 
+function src()
 {
     cd /cygdrive/c/src/${1}
 }
 
-function rightangle() 
+function rightangle()
 {
     cd ~/work/projects/rightangle/${1}
 }
 
-function test() 
+function test()
 {
     cd ~/work/test/${1}
 }
 
 
-function work_proj() 
+function work_proj()
 {
     cd ~/work/projects/${1}
 }
@@ -140,6 +140,7 @@ if [ $TERM = cygwin -o $TERM = xterm-256color ]
 then
     alias ant='${ANT_HOME}/bin/ant.bat'
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
+    alias atom='/cygdrive/c/Users/ljones/AppData/Local/atom/bin/atom.cmd'
     alias clj='clj-160'
     alias clj-160='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main'
     alias clj-clr='clj-clr-160'
@@ -217,4 +218,3 @@ then
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
 fi
-

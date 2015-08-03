@@ -153,7 +153,8 @@ then
     alias eject='~/professional/software/system/drivetools/EjectMedia.exe'
     alias elixir='/cygdrive/c/PROGRA~2/Elixir/bin/elixir.bat'
     alias elixirc='/cygdrive/c/PROGRA~2/Elixir/bin/elixirc.bat'
-    alias emacs="/cygdrive/c/emacs-24.4/bin/runemacs.exe -geometry $EMACS_SIZE"
+    alias emacs='/cygdrive/c/emacs-24.4/bin/emacsclientw.exe -na '\''C:\emacs-24.4\bin\runemacs.exe'\'' -c'
+    alias emacs_old="/cygdrive/c/emacs-24.4/bin/runemacs.exe -geometry $EMACS_SIZE"
     alias erl='/cygdrive/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl6.2/bin/escript.exe'

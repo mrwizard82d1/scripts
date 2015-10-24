@@ -1,5 +1,7 @@
 # /etc/bashrc
 
+set -o vi
+
 # User-specific functions and aliases.
 
 # Function to change prompt. Shamelessly "stolen" from CentOS /etc/bashrc.
@@ -37,27 +39,6 @@ if [ "$PS1" ]; then
   # fi
   # to your custom modification shell script in /etc/profile.d/ directory
 fi
-
-# Function to change title bar
-# Shamelessly "stolen" from
-# http://tldp.org/HOWTO/Bash-Prompt-HOWTO/xterm-title-bar-manipulations.html
-function proml
-{
-    case $TERM in
-	xterm*)
-            local TITLEBAR='\[\033]0;\u@\h: \W\007\]'
-            ;;
-	*)
-            local TITLEBAR=''
-            ;;
-    esac
-
-    PS1="${TITLEBAR}\
-[\u@\h: \W]\
-\$ "
-    PS2='> '
-    PS4='+ '
-}
 
 # Utility functions
 function latest()
@@ -112,7 +93,6 @@ function whitepapers()
 }
 
 # Quickly change to work directories
-
 function src()
 {
     cd /cygdrive/c/src/${1}
@@ -136,8 +116,14 @@ function work_proj()
 
 
 # Aliases
-if [ $TERM = cygwin -o $TERM = xterm-256color ]
-then
+if [ "$(uname)" == "Darwin" ]; then
+    # Do something under Mac OS X platform
+    :
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # Do something under Linux platform
+    :
+elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
+    # Do something under Cygwin platform
     alias ant='${ANT_HOME}/bin/ant.bat'
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
     alias atom='/cygdrive/c/Users/ljones/AppData/Local/atom/bin/atom.cmd'
@@ -188,7 +174,7 @@ then
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
     alias manage_mapped_drives='/cygdrive/c/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
-	alias mix="/cygdrive/c/PROGRA~2/Elixir/bin/mix.bat"
+	  alias mix="/cygdrive/c/PROGRA~2/Elixir/bin/mix.bat"
     alias mysql='/cygdrive/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant=/cygdrive/c/PROGRA~2/nant-0.92/bin/nant
@@ -209,7 +195,7 @@ then
     alias roundup_server='python -c "from roundup.scripts.roundup_server import run; run()"'
     alias rspec='/cygdrive/c/Ruby21-x64/bin/rspec.bat'
     alias Rterm='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
-#    alias ruby='/cygdrive/c/Ruby21-x64/bin/ruby.exe'
+    #    alias ruby='/cygdrive/c/Ruby21-x64/bin/ruby.exe'
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
     alias st='/cygdrive/c/PROGRA~2/SUBLIM~1/sublime_text.exe'
     alias svn='/cygdrive/c/Program\ Files/TortoiseSVN/bin/svn.exe'
@@ -218,4 +204,7 @@ then
     alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+    # Do something under Windows NT platform
+    :
 fi

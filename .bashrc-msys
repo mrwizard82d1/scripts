@@ -205,7 +205,7 @@ then
 	alias mix="/c/PROGRA~2/Elixir/bin/mix.bat"
     alias mysql='/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
     alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
-    alias nant='/usr/local/bin/nant-0.85/bin/NAnt.exe'
+    alias nant=/c/PROGRA~2/nant-0.92/bin/nant
     alias nosetests=/c/Python27/Scripts/nosetests.exe
     alias npp='/c/PROGRA~2/NOTEPA~1/notepad++.exe'
     alias path_as_list="python $(cygpath -w $CYGHOME/professional/projects/pyutils/path2list.py)"

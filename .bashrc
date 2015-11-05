@@ -30,12 +30,12 @@ function wtarit()
     tar -zcf ${1}-$(hostname).tgz --exclude=.svn ${1}
 }
 
-# Quickly change to directories of interest
 function software()
 {
     cd ~/professional/software/${1}
 }
 
+# Quickly change to directories of interest
 function projects()
 {
     cd ~/professional/projects/${1}
@@ -56,28 +56,41 @@ function whitepapers()
     cd ~/professional/whitepapers/${1}
 }
 
-# Quickly change to work directories
-function src()
-{
-    cd /cygdrive/c/src/${1}
-}
+if [ "$(uname)" == "Darwin" ]; then
+    # Do something under Mac OS X platform
+    :
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # Do something under Linux platform
+    :
+elif [ "$(expr substr $(uname -s) 8 9)" == "NT" -o "$(expr substr $(uname -s) 9 10)" == "NT" ]; then
+	# Do something for cygwin and msys
+	function rightangle()
+	{
+		cd ~/work/projects/rightangle/${1}
+	}
 
-function rightangle()
-{
-    cd ~/work/projects/rightangle/${1}
-}
-
-function test()
-{
-    cd ~/work/test/${1}
-}
+	function test()
+	{
+		cd ~/work/test/${1}
+	}
 
 
-function work_proj()
-{
-    cd ~/work/projects/${1}
-}
-
+	function work_proj()
+	{
+		cd ~/work/projects/${1}
+	}
+elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
+	# Quickly change to work directories
+	function src()
+	{
+		cd /cygdrive/c/src/${1}
+	}
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+	function src()
+	{
+		cd /c/src/${1}
+	}
+fi
 
 # Configure emacs screen sizes
 export EMACS_SIZE=80x50

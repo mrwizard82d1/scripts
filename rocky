@@ -1,0 +1,9 @@
+# Script to open a remote desktop to Rocky
+
+if [ $# -lt 2 ]
+then
+	echo "Usage: rocky <name_or_ip_address> <password>"
+	exit 1
+fi
+
+rdesktop -u Larry -p $2 -f -r sound:local $1

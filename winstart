@@ -1,0 +1,9 @@
+#! bash
+
+
+# Invoke the Windows start command.
+#
+# One can use this command to start, for example, the Services applet
+# by executing the command "winstart services.msc &".
+
+cmd /c start "$@"

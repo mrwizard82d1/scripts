@@ -1,0 +1,5 @@
+#! bash
+
+# Script to start the Selenium server.
+
+java -jar $(cygpath -w /cygdrive/d/jonesl/professional/software/devtools/selenium/selenium-remote-control-1.0.1/selenium-server-1.0.1/selenium-server.jar)

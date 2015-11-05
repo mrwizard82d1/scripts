@@ -1,2 +1,2 @@
 # scripts
-Shell scripts that I use for my work.
+Shell scripts that I use across computer platforms.

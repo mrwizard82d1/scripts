@@ -17,7 +17,7 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     # Do something under Windows NT platform
     # I need to install rlwrap on Windows - but not for now.
     export SVN_EDITOR='cmd //c /c/Windows/gvim.bat'
-    export GIT_EDITOR='cmd //c /c/Windows/gvim.bat'
+    export GIT_EDITOR='cmd //c /c/Windows/gvim.bat -f'
 fi
 
 

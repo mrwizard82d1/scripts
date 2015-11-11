@@ -62,8 +62,21 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
-	# Do something for cygwin and msys
+elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
+	# Quickly change to work directories
+	function src()
+	{
+		cd /cygdrive/c/src/${1}
+	}
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+	function src()
+	{
+		cd /c/src/${1}
+	}
+fi
+
+# Functions common to Cygwin and MWING32
+if [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
 	function rightangle()
 	{
 		cd ~/work/projects/rightangle/${1}
@@ -79,17 +92,7 @@ elif [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 
 	{
 		cd ~/work/projects/${1}
 	}
-elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
-	# Quickly change to work directories
-	function src()
-	{
-		cd /cygdrive/c/src/${1}
-	}
-elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
-	function src()
-	{
-		cd /c/src/${1}
-	}
+
 fi
 
 # Configure emacs screen sizes
@@ -109,9 +112,6 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
-    # Do something for cygwin and msys
-    alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
 elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
     # Do something under Cygwin platform
     alias atom='/cygdrive/c/Users/ljones/AppData/Local/atom/bin/atom.cmd'
@@ -279,4 +279,10 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     alias vs_2012='start cmd /k /c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat'
     alias werl='/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/c/PROGRA~2/JED/bin/wjed.exe'
+fi
+
+# Aliases commont to both Cygwin and MWING32
+if [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
+    # Do something for cygwin and msys
+    alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
 fi

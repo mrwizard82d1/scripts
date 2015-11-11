@@ -62,7 +62,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 8 9)" == "NT" -o "$(expr substr $(uname -s) 9 10)" == "NT" ]; then
+elif [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
 	# Do something for cygwin and msys
 	function rightangle()
 	{
@@ -109,8 +109,8 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 8 9)" == "NT" -o "$(expr substr $(uname -s) 9 10)" == "NT" ]; then
-	# Do something for cygwin and msys
+elif [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
+    # Do something for cygwin and msys
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
 elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
     # Do something under Cygwin platform
@@ -280,4 +280,3 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     alias werl='/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/c/PROGRA~2/JED/bin/wjed.exe'
 fi
-

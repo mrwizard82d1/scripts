@@ -216,7 +216,6 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     alias elixirc='/c/PROGRA~2/Elixir/bin/elixirc.bat'
     alias emacs='/c/emacs-24.4/bin/emacsclientw.exe -na /c/emacs-24.4/bin/runemacs.exe -c'
     alias emacs_old='/c/emacs-24.4/bin/runemacs.exe -geometry 80x50'
-    alias emacs="/c/emacs-24.4/bin/runemacs.exe -geometry $EMACS_SIZE"
     alias erl='/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/c/PROGRA~1/erl6.2/bin/escript.exe'

@@ -201,6 +201,7 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     alias cygpath=$CYGHOME/../../bin/cygpath.exe
     #
     #
+    alias ack='perl /c/PROGRA~3/CHOCOL~1/lib/STRAWB~1/Ack/tools/ack.pl'
     alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'
     alias clj='clj-160'
     alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"

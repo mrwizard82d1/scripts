@@ -203,6 +203,7 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     #
     alias ack='perl /c/PROGRA~3/CHOCOL~1/lib/STRAWB~1/Ack/tools/ack.pl'
     alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'
+    alias cap2esc='~/professional/software/devtools/vim/uncap.exe 0x1b:0x14'
     alias clj='clj-160'
     alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"
     alias clj-clr='clj-clr-160'
@@ -224,7 +225,7 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     alias gem='cmd //c /c/Ruby21-x64/bin/gem.bat'
     alias inst_profile="cp .bash_profile $CYGHOME/.bash_profile"
     alias jed='/c/PROGRA~2/JED/bin/jed.exe'
-    alias gvim='gvim.bat'
+    alias gvim='cmd //c /c/Windows/gvim.bat'
     alias hg='/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias iex='/c/PROGRA~2/Elixir/bin/iex.bat'

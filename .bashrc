@@ -68,7 +68,7 @@ elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
 	{
 		cd /cygdrive/c/src/${1}
 	}
-elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
 	function src()
 	{
 		cd /c/src/${1}
@@ -77,17 +77,6 @@ fi
 
 # Functions common to Cygwin and MWING32
 if [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
-	function rightangle()
-	{
-		cd ~/work/projects/rightangle/${1}
-	}
-
-	function test()
-	{
-		cd ~/work/test/${1}
-	}
-
-
 	function work_proj()
 	{
 		cd ~/work/projects/${1}
@@ -162,7 +151,7 @@ elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
     alias manage_mapped_drives='/cygdrive/c/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
-	  alias mix="/cygdrive/c/PROGRA~2/Elixir/bin/mix.bat"
+	alias mix="/cygdrive/c/PROGRA~2/Elixir/bin/mix.bat"
     alias mysql='/cygdrive/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant=/cygdrive/c/PROGRA~2/nant-0.92/bin/nant
@@ -192,20 +181,13 @@ elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
     alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
-elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
     # Do something under Windows NT platform
-    CYGHOME=/c/cygwin64/home/ljones
-
-    # This definition for cygpath must come first so that I can use it in
-    # subsequent aliases.
-    alias cygpath=$CYGHOME/../../bin/cygpath.exe
-    #
-    #
     alias ack='perl /c/PROGRA~3/CHOCOL~1/lib/STRAWB~1/Ack/tools/ack.pl'
     alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'
     alias cap2esc='~/professional/software/devtools/vim/uncap.exe 0x1b:0x14'
     alias clj='clj-160'
-    alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"
+    # alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"
     alias clj-clr='clj-clr-160'
     alias clj-clr-160="$CYGHOME/professional/software/languages/clojure-clr/Release\ 4.0/Clojure.Main.exe"
     alias clj-clr-160-dbg="$CYGHOME/professional/software/languages/clojure-clr/Debug\ 4.0/Clojure.Main.exe"
@@ -221,19 +203,18 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     alias erl='/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/c/PROGRA~1/erl6.2/bin/escript.exe'
-    alias find_grep="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/find_grep.py)"
+#     alias find_grep="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/find_grep.py)"
     alias gem='cmd //c /c/Ruby21-x64/bin/gem.bat'
     alias inst_profile="cp .bash_profile $CYGHOME/.bash_profile"
     alias jed='/c/PROGRA~2/JED/bin/jed.exe'
-    alias gvim='cmd //c /c/Windows/gvim.bat'
     alias hg='/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias iex='/c/PROGRA~2/Elixir/bin/iex.bat'
     alias iexw='/c/PROGRA~2/Elixir/bin/iex.bat --werl'
     alias igem='/c/PROGRA~1/IRONRU~1.1/bin/igem.bat'
-    alias ilettuce='ipy $(cygpath -wd /c/PROGRA~1/IronPython\ 2.7/Lib/site-packages/lettuce/lettuce_cli.py)'
+#    alias ilettuce='ipy $(cygpath -wd /c/PROGRA~1/IronPython\ 2.7/Lib/site-packages/lettuce/lettuce_cli.py)'
     alias iirb='/c/PROGRA~1/IRONRU~1.1/bin/iirb.bat'
-    alias inosetests='ipy $(cygpath -wd /c/PROGRA~1/IronPython\ 2.7/Lib/site-packages/nose/core.py)'
+#    alias inosetests='ipy $(cygpath -wd /c/PROGRA~1/IronPython\ 2.7/Lib/site-packages/nose/core.py)'
     alias ipy='ipy27'
     alias ipy27='/c/PROGRA~2/IronPython\ 2.7/ipy64.exe'
     alias ipy27_32='/c/PROGRA~2/IronPython\ 2.7/ipy.exe'
@@ -250,15 +231,15 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
     alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb="$CYGHOME/professional/software/system/drivetools/ListUsbDrives.exe"
-    alias manage_mapped_drives="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/manage_mapped_drives.py)"
+#    alias manage_mapped_drives="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/manage_mapped_drives.py)"
 	alias mix="/c/PROGRA~2/Elixir/bin/mix.bat"
     alias mysql='/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
-    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
+#    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
     alias nant=/c/PROGRA~2/nant-0.92/bin/nant
     alias nosetests=/c/Python27/Scripts/nosetests.exe
     alias npp='/c/PROGRA~2/NOTEPA~1/notepad++.exe'
-    alias path_as_list="python $(cygpath -w $CYGHOME/professional/projects/pyutils/path2list.py)"
-    alias path2svnurl="python $(cygpath -w $CYGHOME/professional/projects/pyutils/dirname_to_svn_url.py)"
+#    alias path_as_list="python $(cygpath -w $CYGHOME/professional/projects/pyutils/path2list.py)"
+#    alias path2svnurl="python $(cygpath -w $CYGHOME/professional/projects/pyutils/dirname_to_svn_url.py)"
     alias pn='/c/PROGRA~2/PROGRA~1/pn.exe'
     alias pip='/c/Python27/Scripts/pip'
     alias python='python27'
@@ -268,14 +249,13 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     alias ra12='/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rspec='/c/Ruby21-x64/bin/rspec.bat'
     alias Rterm='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
-    alias rm_gen_bin="python $(cygpath -wa $CYGHOME/professional/projects/pyutils/rm_gen_bin.py)"
+#    alias rm_gen_bin="python $(cygpath -wa $CYGHOME/professional/projects/pyutils/rm_gen_bin.py)"
     alias rm_usb="$CYGHOME/professional/software/system/drivetools/RemoveDrive.exe"
     alias roundup_admin='python -c "from roundup.scripts.roundup_admin import run; run()"'
     alias roundup_server='python -c "from roundup.scripts.roundup_server import run; run()"'
-    alias save_clipboard_image="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/save_clipboard_image.py)"
+#    alias save_clipboard_image="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/save_clipboard_image.py)"
     alias st='/c/PROGRA~2/SUBLIM~1/sublime_text.exe'
     alias svn='/c/Program\ Files/TortoiseSVN/bin/svn.exe'
-    alias vim='vim.bat'
     alias vs_2010='start cmd /k /c/PROGRA~2/MICROS~2.0/VC/vcvarsall.bat x86'
     alias vs_2012='start cmd /k /c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat'
     alias werl='/c/PROGRA~1/erl6.2/bin/werl.exe'

@@ -4,7 +4,7 @@ if [ "$(uname)" == "Darwin" ]; then
     # Do something under Mac OS X platform
     :
     export SVN_EDITOR="mvim -f --nomru"
-    export GIT_EDITOR="mvim -f --nomru"
+    # export GIT_EDITOR="mvim -f --nomru"
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under Linux platform
     :

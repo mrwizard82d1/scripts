@@ -97,7 +97,7 @@ esac
 alias ant='${ANT_HOME}/bin/ant.bat'
 if [ "$(uname)" == "Darwin" ]; then
     # Do something under Mac OS X platform
-    :
+    alias emacs='open -a /Applications/Emacs.app'
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under Linux platform
     :

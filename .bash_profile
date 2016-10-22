@@ -1,19 +1,20 @@
 # (Bash) Shell startup script.
 
-if [ "$(uname)" == "Darwin" ]; then
+SYS_NAME=$(uname -s)
+if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
     :
     export SVN_EDITOR="mvim -f --nomru"
     export GIT_EDITOR="mvim -f --nomru"
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
+elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     # Do something under Cygwin platform
     export SVN_EDITOR=$(cygpath -w /cygdrive/c/Windows/gvim.bat)
     export GIT_EDITOR=\'$(cygpath -wa /cygdrive/c/Windows/gvim.bat)\'
     export EDITOR=$(cygpath -w /cygdrive/c/Windows/gvim.bat)
-elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
+elif [ ${SYS_NAME:0:15} == "MINGW64_NT-10.0" ]; then
     # Do something under Windows NT platform
     # I need to install rlwrap on Windows - but not for now.
     export SVN_EDITOR='cmd //c /c/Windows/gvim.bat'

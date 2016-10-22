@@ -56,19 +56,20 @@ function whitepapers()
     cd ~/professional/whitepapers/${1}
 }
 
-if [ "$(uname)" == "Darwin" ]; then
+SYS_NAME=$(uname -s)
+if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
     :
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
+elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
 	# Quickly change to work directories
 	function src()
 	{
 		cd /cygdrive/c/src/${1}
 	}
-elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
+elif [ ${SYS_NAME:0:15} == "MINGW64_NT-10.0" ]; then
 	function src()
 	{
 		cd /c/src/${1}
@@ -76,13 +77,12 @@ elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
 fi
 
 # Functions common to Cygwin and MWING32
-if [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
+if [[ ${SYS_NAME:7:2} = "NT" || ${SYS_NAME:8:2} = "NT" ]] ; then
 	function work_proj()
 	{
 		cd ~/work/projects/${1}
 	}
-
-fi
+fi 
 
 # Configure emacs screen sizes
 export EMACS_SIZE=80x50
@@ -95,13 +95,13 @@ esac
 
 # Aliases
 alias ant='${ANT_HOME}/bin/ant.bat'
-if [ "$(uname)" == "Darwin" ]; then
+if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
     :
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
+elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     # Do something under Cygwin platform
     alias atom='/cygdrive/c/Users/ljones/AppData/Local/atom/bin/atom.cmd'
     alias clj='clj-160'
@@ -181,7 +181,7 @@ elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
     alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
-elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
+elif [ ${SYS_NAME:0:15} == "MINGW64_NT-10.0" ]; then
     # Do something under Windows NT platform
     alias ack='perl /c/PROGRA~3/CHOCOL~1/lib/STRAWB~1/Ack/tools/ack.pl'
     alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'
@@ -263,7 +263,7 @@ elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
 fi
 
 # Aliases commont to both Cygwin and MWING32
-if [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
+if [[ ${SYS_NAME:7:2} == "NT" || ${SYS_NAME:8:2} == "NT" ]]; then
     # Do something for cygwin and msys
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
 fi

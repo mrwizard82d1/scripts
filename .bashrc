@@ -106,9 +106,9 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias atom='/cygdrive/c/Users/ljones/AppData/Local/atom/bin/atom.cmd'
     alias clj='clj-160'
     alias clj-160='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main'
-    alias clj-clr='clj-clr-160'
-    alias clj-clr-160="~/professional/software/languages/clojure-clr/Release\ 4.0/Clojure.Main.exe"
-    alias clj-clr-160-dbg="~/professional/software/languages/clojure-clr/Debug\ 4.0/Clojure.Main.exe"
+    alias clj-clr='clj-clr-180'
+    alias clj-clr-180="~/professional/software/languages/clojure-clr/clojure-clr-180/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/clojure-clr-180/Debug\ 4.0/Clojure.Main.exe"
     alias cucumber='/cygdrive/c/Ruby21-x64/bin/cucumber.bat'
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
@@ -188,9 +188,9 @@ elif [ ${SYS_NAME:0:15} == "MINGW64_NT-10.0" ]; then
     alias cap2esc='~/professional/software/devtools/vim/uncap.exe 0x1b:0x14'
     alias clj='clj-160'
     # alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"
-    alias clj-clr='clj-clr-160'
-    alias clj-clr-160="$CYGHOME/professional/software/languages/clojure-clr/Release\ 4.0/Clojure.Main.exe"
-    alias clj-clr-160-dbg="$CYGHOME/professional/software/languages/clojure-clr/Debug\ 4.0/Clojure.Main.exe"
+    alias clj-clr='clj-clr-180'
+    alias clj-clr-180="~/professional/software/languages/clojure-clr/clojure-clr-180/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/clojure-clr-180/Debug\ 4.0/Clojure.Main.exe"
     alias cucumber='/c/Ruby21-x64/bin/cucumber.bat'
     alias doxygen='/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/c/eclipse/eclipse.exe'

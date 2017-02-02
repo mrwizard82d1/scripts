@@ -224,9 +224,9 @@ elif [ ${SYS_NAME:0:15} == "MINGW64_NT-10.0" ]; then
     alias ir='/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='cmd //c /c/Ruby21-x64/bin/irb.bat'
-    alias jar='/c/PROGRA~1/Java/jdk1.8.0_45/bin/jar.exe'
-    alias java='/c/PROGRA~1/Java/jdk1.8.0_45/bin/java.exe'
-    alias javac='/c/PROGRA~1/Java/jdk1.8.0_45/bin/javac.exe'
+    alias jar='/c/PROGRA~1/Java/jdk1.8.0_121/bin/jar.exe'
+    alias java='/c/PROGRA~1/Java/jdk1.8.0_121/bin/java.exe'
+    alias javac='/c/PROGRA~1/Java/jdk1.8.0_121/bin/javac.exe'
     alias lein="$CYGHOME/.lein/bin/lein.bat"
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
     alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe

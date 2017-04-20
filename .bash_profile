@@ -2,10 +2,13 @@
 
 SYS_NAME=$(uname -s)
 if [ $SYS_NAME == "Darwin" ]; then
-    # Do something under Mac OS X platform
-    :
     export SVN_EDITOR="mvim -f --nomru"
     export GIT_EDITOR="mvim -f --nomru"
+
+	# Support node version manager using brew (not supported by original
+	# nvm authors)
+	export NVM_DIR="$HOME/.nvm"
+	. "/usr/local/opt/nvm/nvm.sh"
 elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :

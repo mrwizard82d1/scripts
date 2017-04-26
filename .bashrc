@@ -204,7 +204,7 @@ elif [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
     alias erl='/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/c/PROGRA~1/erl6.2/bin/escript.exe'
-#     alias find_grep="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/find_grep.py)"
+    alias find_grep="/c/Python27/python.exe $HOME/professional/projects/pyutils/find_grep.py"
     alias gem='cmd //c /c/Ruby21-x64/bin/gem.bat'
     alias inst_profile="cp .bash_profile $CYGHOME/.bash_profile"
     alias jed='/c/PROGRA~2/JED/bin/jed.exe'

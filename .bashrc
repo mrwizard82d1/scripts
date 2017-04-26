@@ -56,6 +56,7 @@ function whitepapers()
     cd ~/professional/whitepapers/${1}
 }
 
+MINGW_SYS_NAME="MINGW32_NT-10.0"
 SYS_NAME=$(uname -s)
 if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
@@ -69,7 +70,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
 	{
 		cd /cygdrive/c/src/${1}
 	}
-elif [ ${SYS_NAME:0:15} == "MINGW64_NT-10.0" ]; then
+elif [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
 	function src()
 	{
 		cd /c/src/${1}
@@ -181,7 +182,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
-elif [ ${SYS_NAME:0:15} == "MINGW64_NT-10.0" ]; then
+elif [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
     # Do something under Windows NT platform
     alias ack='perl /c/PROGRA~3/CHOCOL~1/lib/STRAWB~1/Ack/tools/ack.pl'
     alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'

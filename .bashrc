@@ -85,6 +85,14 @@ if [[ ${SYS_NAME:7:2} = "NT" || ${SYS_NAME:8:2} = "NT" ]] ; then
 	}
 fi 
 
+# Work only
+if [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
+	function ab_proj()
+	{
+		cd /c/AutobahnProjects/${1}
+	}
+fi
+
 # Configure emacs screen sizes
 export EMACS_SIZE=80x50
 case `hostname` in

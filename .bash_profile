@@ -1,5 +1,6 @@
 # (Bash) Shell startup script.
 
+MINGW_SYS_NAME="MINGW32_NT-10.0-WOW"
 SYS_NAME=$(uname -s)
 if [ $SYS_NAME == "Darwin" ]; then
     export SVN_EDITOR="mvim -f --nomru"
@@ -17,7 +18,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     export SVN_EDITOR=$(cygpath -w /cygdrive/c/Windows/gvim.bat)
     export GIT_EDITOR=\'$(cygpath -wa /cygdrive/c/Windows/gvim.bat)\'
     export EDITOR=$(cygpath -w /cygdrive/c/Windows/gvim.bat)
-elif [ ${SYS_NAME:0:15} == "MINGW64_NT-10.0" ]; then
+elif [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
     # Do something under Windows NT platform
     # I need to install rlwrap on Windows - but not for now.
     export SVN_EDITOR='cmd //c /c/Windows/gvim.bat'

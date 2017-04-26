@@ -56,8 +56,9 @@ function whitepapers()
     cd ~/professional/whitepapers/${1}
 }
 
-MINGW_SYS_NAME="MINGW32_NT-10.0"
-SYS_NAME=$(uname -s)
+# Set in `.bash_profile`
+# MINGW_SYS_NAME="MINGW32_NT-10.0-WOW"
+# SYS_NAME=$(uname -s)
 if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
     :
@@ -86,10 +87,11 @@ if [[ ${SYS_NAME:7:2} = "NT" || ${SYS_NAME:8:2} = "NT" ]] ; then
 fi 
 
 # Work only
-if [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
+if [ ${SYS_NAME} == $MINGW_SYS_NAME ]; then
+    export AB_PROJ=/c/AutobahnProjects
 	function ab_proj()
 	{
-		cd /c/AutobahnProjects/${1}
+		cd $AB_PROJ/${1}
 	}
 fi
 

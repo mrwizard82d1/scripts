@@ -56,9 +56,8 @@ function whitepapers()
     cd ~/professional/whitepapers/${1}
 }
 
-# Set in `.bash_profile`
-# MINGW_SYS_NAME="MINGW32_NT-10.0-WOW"
-# SYS_NAME=$(uname -s)
+MINGW_SYS_NAME="MINGW32_NT"
+SYS_NAME=$(uname -s)
 if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
     :
@@ -71,7 +70,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
 	{
 		cd /cygdrive/c/src/${1}
 	}
-elif [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
+elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 	function src()
 	{
 		cd /c/src/${1}
@@ -87,7 +86,7 @@ if [[ ${SYS_NAME:7:2} = "NT" || ${SYS_NAME:8:2} = "NT" ]] ; then
 fi 
 
 # Work only
-if [ ${SYS_NAME} == $MINGW_SYS_NAME ]; then
+if [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     export AB_PROJ=/c/AutobahnProjects
 	function ab_proj()
 	{
@@ -192,7 +191,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
-elif [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
+elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     # Do something under Windows NT platform
     alias ack='perl /c/PROGRA~3/CHOCOL~1/lib/STRAWB~1/Ack/tools/ack.pl'
     alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'

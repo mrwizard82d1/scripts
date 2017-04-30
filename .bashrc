@@ -107,7 +107,7 @@ esac
 alias ant='${ANT_HOME}/bin/ant.bat'
 if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
-    :
+    alias find_grep='python ~/professional/projects/pyutils/find_grep.py'
 elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :

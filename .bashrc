@@ -237,7 +237,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias jar='/c/PROGRA~1/Java/jdk1.8.0_121/bin/jar.exe'
     alias java='/c/PROGRA~1/Java/jdk1.8.0_121/bin/java.exe'
     alias javac='/c/PROGRA~1/Java/jdk1.8.0_121/bin/javac.exe'
-    alias lein="$CYGHOME/.lein/bin/lein.bat"
+    alias lein="~/.lein/bin/lein.bat"
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
     alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb="$CYGHOME/professional/software/system/drivetools/ListUsbDrives.exe"

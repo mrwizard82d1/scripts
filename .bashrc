@@ -113,7 +113,7 @@ elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     :
 elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     # Do something under Cygwin platform
-    alias atom='/cygdrive/c/Users/ljones/AppData/Local/atom/bin/atom.cmd'
+    alias atom='/cygdrive/c/Users/larryj/AppData/Local/atom/bin/atom.cmd'
     alias clj='clj-160'
     alias clj-160='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main'
     alias clj-clr='clj-clr-180'
@@ -194,7 +194,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
 elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     # Do something under Windows NT platform
     alias ack='perl /c/PROGRA~3/CHOCOL~1/lib/STRAWB~1/Ack/tools/ack.pl'
-    alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'
+    alias atom='/c/Users/larryj/AppData/Local/atom/bin/atom'
     alias boot=~/.boot/boot.exe
     alias cap2esc='~/professional/software/devtools/vim/uncap.exe 0x1b:0x14'
     alias clj='clj-160'

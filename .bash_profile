@@ -1,4 +1,5 @@
 # (Bash) Shell startup script.
+(set -o igncr) 2>/dev/null && set -o igncr; # this comment is required
 
 MINGW_SYS_NAME="MINGW32_NT-10.0-WOW"
 SYS_NAME=$(uname -s)
@@ -14,7 +15,11 @@ elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :
 elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
-    # Do something under Cygwin platform
+    # Ignore CR
+    export SHELLOPTS
+    set -o igncr
+
+    # Set up editors
     export SVN_EDITOR=c:/cygwin64/bin/vi.exe
     export GIT_EDITOR=c:/cygwin64/bin/vi.exe
     export EDITOR=c:/cygwin64/bin/vi.exe

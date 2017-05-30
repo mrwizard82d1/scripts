@@ -131,7 +131,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias erl='/cygdrive/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl6.2/bin/escript.exe'
-    alias find_grep='/cygdrive/c/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
+    alias find_grep='/cygdrive/c/Python27/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
     alias gem='/cygdrive/c/Ruby21-x64/bin/gem.bat'
     alias git='/cygdrive/c/PROGRA~1/Git/bin/git.exe'
     alias inst_profile='cp .bash_profile ~/.bash_profile'

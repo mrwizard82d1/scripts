@@ -166,7 +166,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant=/cygdrive/c/PROGRA~2/nant-0.92/bin/nant
     alias nosetests=/cygdrive/c/Python27/Scripts/nosetests.exe
-    alias npp='/cygdrive/c/PROGRA~2/NOTEPA~1/notepad++.exe'
+    alias npp='/cygdrive/c/PROGRA~1/NOTEPA~1/notepad++.exe'
     alias path_as_list='python $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
     alias path2svnurl='python $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py)'
     alias pn='/cygdrive/c/PROGRA~2/PROGRA~1/pn.exe'
@@ -247,7 +247,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 #    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
     alias nant=/c/PROGRA~2/nant-0.92/bin/nant
     alias nosetests=/c/Python27/Scripts/nosetests.exe
-    alias npp='/c/PROGRA~2/NOTEPA~1/notepad++.exe'
+    alias npp='/c/PROGRA~1/NOTEPA~1/notepad++.exe'
 #    alias path_as_list="python $(cygpath -w $CYGHOME/professional/projects/pyutils/path2list.py)"
 #    alias path2svnurl="python $(cygpath -w $CYGHOME/professional/projects/pyutils/dirname_to_svn_url.py)"
     alias pn='/c/PROGRA~2/PROGRA~1/pn.exe'

@@ -112,7 +112,7 @@ elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     :
 elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     # Do something under Cygwin platform
-    alias atom='/cygdrive/c/Users/ljones/AppData/Local/atom/bin/atom.cmd'
+    alias atom='/cygdrive/c/Users/larryj/AppData/Local/atom/bin/atom.cmd'
     alias clj='clj-160'
     alias clj-160='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main'
     alias clj-clr='clj-clr-180'
@@ -130,11 +130,11 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias erl='/cygdrive/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl6.2/bin/escript.exe'
-    alias find_grep='/cygdrive/c/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
+    alias find_grep='/cygdrive/c/Python27/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
     alias gem='/cygdrive/c/Ruby21-x64/bin/gem.bat'
+    alias git='/cygdrive/c/PROGRA~1/Git/bin/git.exe'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
     alias jed='/cygdrive/c/PROGRA~2/JED/bin/jed.exe'
-    alias gvim='gvim.bat'
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias iex='/cygdrive/c/PROGRA~2/Elixir/bin/iex.bat'
@@ -185,7 +185,6 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
     alias st='/cygdrive/c/PROGRA~2/SUBLIM~1/sublime_text.exe'
     alias svn='/cygdrive/c/Program\ Files/TortoiseSVN/bin/svn.exe'
-    alias vim='vim.bat'
     alias vs_2010='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~2.0/VC/vcvarsall.bat) x86"'
     alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
@@ -193,7 +192,8 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
 elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     # Do something under Windows NT platform
     alias ack='perl /c/PROGRA~3/CHOCOL~1/lib/STRAWB~1/Ack/tools/ack.pl'
-    alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'
+    alias atom='/c/Users/larryj/AppData/Local/atom/bin/atom'
+    alias boot=~/.boot/boot.exe
     alias cap2esc='~/professional/software/devtools/vim/uncap.exe 0x1b:0x14'
     alias clj='clj-160'
     # alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"
@@ -236,7 +236,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias jar='/c/PROGRA~1/Java/jdk1.8.0_121/bin/jar.exe'
     alias java='/c/PROGRA~1/Java/jdk1.8.0_121/bin/java.exe'
     alias javac='/c/PROGRA~1/Java/jdk1.8.0_121/bin/javac.exe'
-    alias lein="$CYGHOME/.lein/bin/lein.bat"
+    alias lein="~/.lein/bin/lein.bat"
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
     alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb="$CYGHOME/professional/software/system/drivetools/ListUsbDrives.exe"

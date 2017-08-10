@@ -23,6 +23,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     export SVN_EDITOR=c:/cygwin64/bin/vi.exe
     export GIT_EDITOR=c:/cygwin64/bin/vi.exe
     export EDITOR=c:/cygwin64/bin/vi.exe
+    export PAGER="less -R"
 elif [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
     # Do something under Windows NT platform
     # I need to install rlwrap on Windows - but not for now.

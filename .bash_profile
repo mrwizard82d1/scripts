@@ -4,8 +4,8 @@
 MINGW_SYS_NAME="MINGW32_NT-10.0-WOW"
 SYS_NAME=$(uname -s)
 if [ $SYS_NAME == "Darwin" ]; then
-    export SVN_EDITOR="mvim -f --nomru"
-    export GIT_EDITOR="mvim -f --nomru"
+    export SVN_EDITOR=vim
+    export GIT_EDITOR=vim
 
 	# Support node version manager using brew (not supported by original
 	# nvm authors)

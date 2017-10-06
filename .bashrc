@@ -81,6 +81,11 @@ if [[ ${SYS_NAME:7:2} = "NT" || ${SYS_NAME:8:2} = "NT" ]] ; then
 	{
 		cd ~/work/projects/${1}
 	}
+
+    function acn-reagent()
+    {
+        cd /cygdrive/c/AutobahnProjects/Autobahn/app/Eleanor.UI.Web/Content/javascripts/react/site-bdc/acn-reagent
+    }
 fi 
 
 # Work only

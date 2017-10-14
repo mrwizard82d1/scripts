@@ -95,6 +95,10 @@ if [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 	{
 		cd $AB_PROJ/${1}
 	}
+	function ab()
+	{
+		cd $AB_PROJ/Autobahn/${1}
+	}
 fi
 
 # Configure emacs screen sizes
@@ -135,7 +139,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias erl='/cygdrive/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl6.2/bin/escript.exe'
-    alias find_grep='/cygdrive/c/Python27/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
+    alias find_grep='/cygdrive/c/Python36/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
     alias gem='/cygdrive/c/Ruby21-x64/bin/gem.bat'
     alias git='/cygdrive/c/PROGRA~1/Git/bin/git.exe'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
@@ -164,7 +168,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
-    alias manage_mapped_drives='/cygdrive/c/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
+    alias manage_mapped_drives='/cygdrive/c/Python36/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
 	alias mix="/cygdrive/c/PROGRA~2/Elixir/bin/mix.bat"
     alias mysql='/cygdrive/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
@@ -175,9 +179,9 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias path2svnurl='python $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py)'
     alias pn='/cygdrive/c/PROGRA~2/PROGRA~1/pn.exe'
     alias pip='/cygdrive/c/Python27/Scripts/pip'
-    alias python='python27'
-    alias python27='/cygdrive/c/Python27/python.exe'
-    alias python34='/cygdrive/c/Python34/python.exe'
+    alias python='python3'
+    alias python2='/cygdrive/c/Python27/python.exe'
+    alias python3='/cygdrive/c/Python36/python.exe'
     alias R='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
     alias ra12='/cygdrive/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rm_gen_bin='python $(cygpath -wa ~/professional/projects/pyutils/rm_gen_bin.py)'
@@ -217,7 +221,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias erl='/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/c/PROGRA~1/erl6.2/bin/escript.exe'
-    alias find_grep="/c/Python27/python.exe $HOME/professional/projects/pyutils/find_grep.py"
+    alias find_grep="/c/Python36/python.exe $HOME/professional/projects/pyutils/find_grep.py"
     alias gem='cmd //c /c/Ruby21-x64/bin/gem.bat'
     alias inst_profile="cp .bash_profile $CYGHOME/.bash_profile"
     alias jed='/c/PROGRA~2/JED/bin/jed.exe'
@@ -256,9 +260,9 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 #    alias path2svnurl="python $(cygpath -w $CYGHOME/professional/projects/pyutils/dirname_to_svn_url.py)"
     alias pn='/c/PROGRA~2/PROGRA~1/pn.exe'
     alias pip='/c/Python27/Scripts/pip'
-    alias python='python27'
-    alias python27='/c/Python27/python.exe'
-    alias python34='/c/Python34/python.exe'
+    alias python='python3'
+    alias python2='/c/Python27/python.exe'
+    alias python3='/c/Python36/python.exe'
     alias R='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
     alias ra12='/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rspec='/c/Ruby21-x64/bin/rspec.bat'

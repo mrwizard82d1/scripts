@@ -1,4 +1,5 @@
 # (Bash) Shell startup script.
+
 (set -o igncr) 2>/dev/null && set -o igncr; # this comment is required
 
 MINGW_SYS_NAME="MINGW32_NT-10.0-WOW"
@@ -40,6 +41,10 @@ case `hostname` in
     swilliams-PC) EMACS_SIZE=80x43;;
 esac
 
+# Load rbenv automatically by appending
+# the following to ~/.bash_profile:
+
+eval "$(rbenv init -)"
 
 # Include ~/.bashrc if available.
 [[ -r ~/.bashrc ]] && source ~/.bashrc

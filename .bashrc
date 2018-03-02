@@ -101,6 +101,11 @@ if [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 		cd $AB_PROJ/Autobahn/${1}
 	}
 
+	function cr()
+	{
+		cd $AB_PROJ/Autobahn.CustomerRelations/${1}
+	}
+
 	function eleanor()
 	{
 		cd $AB_PROJ/Autobahn/app/Eleanor.UI.Web/${1}

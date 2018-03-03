@@ -95,9 +95,30 @@ if [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 	{
 		cd $AB_PROJ/${1}
 	}
+
 	function ab()
 	{
 		cd $AB_PROJ/Autobahn/${1}
+	}
+
+	function cr()
+	{
+		cd $AB_PROJ/Autobahn.CustomerRelations/${1}
+	}
+
+	function eleanor()
+	{
+		cd $AB_PROJ/Autobahn/app/Eleanor.UI.Web/${1}
+	}
+
+	function ronaele()
+	{
+		cd $AB_PROJ/Autobahn/app/Ronaele.UI.Web/${1}
+	}
+
+	function react()
+	{
+		cd $AB_PROJ/Autobahn/app/Eleanor.UI.Web/Content/javascripts/react/site-bdc/${1}
 	}
 fi
 
@@ -161,9 +182,9 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='/cygdrive/c/Ruby21-x64/bin/irb.bat'
-    alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_152/bin/jar.exe'
-    alias java='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_152/bin/java.exe'
-    alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_152/bin/javac.exe'
+    alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/jar.exe'
+    alias java='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/java.exe'
+    alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/javac.exe'
     alias lein='~/.lein/bin/lein.bat'
     alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
@@ -242,9 +263,9 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias ir='/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='cmd //c /c/Ruby21-x64/bin/irb.bat'
-    alias jar='/c/PROGRA~1/Java/jdk1.8.0_152/bin/jar.exe'
-    alias java='/c/PROGRA~1/Java/jdk1.8.0_152/bin/java.exe'
-    alias javac='/c/PROGRA~1/Java/jdk1.8.0_152/bin/javac.exe'
+    alias jar='/c/PROGRA~1/Java/jdk1.8.0_161/bin/jar.exe'
+    alias java='/c/PROGRA~1/Java/jdk1.8.0_161/bin/java.exe'
+    alias javac='/c/PROGRA~1/Java/jdk1.8.0_161/bin/javac.exe'
     alias lein="~/.lein/bin/lein.bat"
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
     alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe

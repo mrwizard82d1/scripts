@@ -7,6 +7,7 @@ SYS_NAME=$(uname -s)
 if [ $SYS_NAME == "Darwin" ]; then
     export SVN_EDITOR=vim
     export GIT_EDITOR=vim
+    export EDITOR=vim
 
 	# Support node version manager using brew (not supported by original
 	# nvm authors)

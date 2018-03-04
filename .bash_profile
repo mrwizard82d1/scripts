@@ -8,11 +8,6 @@ if [ $SYS_NAME == "Darwin" ]; then
     export SVN_EDITOR=vim
     export GIT_EDITOR=vim
     export EDITOR=vim
-
-	# Support node version manager using brew (not supported by original
-	# nvm authors)
-	export NVM_DIR="$HOME/.nvm"
-	. "/usr/local/opt/nvm/nvm.sh"
 elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :
@@ -41,11 +36,6 @@ case `hostname` in
     Ginny-PC) EMACS_SIZE=80x40;;
     swilliams-PC) EMACS_SIZE=80x43;;
 esac
-
-# Load rbenv automatically by appending
-# the following to ~/.bash_profile:
-
-eval "$(rbenv init -)"
 
 # Include ~/.bashrc if available.
 [[ -r ~/.bashrc ]] && source ~/.bashrc

@@ -1,5 +1,3 @@
-# /etc/bashrc
-
 set -o vi
 
 # User-specific functions and aliases.
@@ -56,19 +54,21 @@ function whitepapers()
     cd ~/professional/whitepapers/${1}
 }
 
-if [ "$(uname)" == "Darwin" ]; then
+MINGW_SYS_NAME="MINGW32_NT"
+SYS_NAME=$(uname -s)
+if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
     :
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
+elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
 	# Quickly change to work directories
 	function src()
 	{
 		cd /cygdrive/c/src/${1}
 	}
-elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
+elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 	function src()
 	{
 		cd /c/src/${1}
@@ -76,12 +76,50 @@ elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
 fi
 
 # Functions common to Cygwin and MWING32
-if [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
+if [[ ${SYS_NAME:7:2} = "NT" || ${SYS_NAME:8:2} = "NT" ]] ; then
 	function work_proj()
 	{
 		cd ~/work/projects/${1}
 	}
 
+    function acn-reagent()
+    {
+        cd /cygdrive/c/AutobahnProjects/Autobahn/app/Eleanor.UI.Web/Content/javascripts/react/site-bdc/acn-reagent
+    }
+fi 
+
+# Work only
+if [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
+    export AB_PROJ=/c/AutobahnProjects
+	function ab_proj()
+	{
+		cd $AB_PROJ/${1}
+	}
+
+	function ab()
+	{
+		cd $AB_PROJ/Autobahn/${1}
+	}
+
+	function cr()
+	{
+		cd $AB_PROJ/Autobahn.CustomerRelations/${1}
+	}
+
+	function eleanor()
+	{
+		cd $AB_PROJ/Autobahn/app/Eleanor.UI.Web/${1}
+	}
+
+	function ronaele()
+	{
+		cd $AB_PROJ/Autobahn/app/Ronaele.UI.Web/${1}
+	}
+
+	function react()
+	{
+		cd $AB_PROJ/Autobahn/app/Eleanor.UI.Web/Content/javascripts/react/site-bdc/${1}
+	}
 fi
 
 # Configure emacs screen sizes
@@ -95,20 +133,22 @@ esac
 
 # Aliases
 alias ant='${ANT_HOME}/bin/ant.bat'
-if [ "$(uname)" == "Darwin" ]; then
+if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
-    alias emacs='open -a /Applications/Emacs.app'
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    alias emacs='open -a /Applications/Emails.app'
+    alias find_grep='python2 ~/professional/projects/pyutils/find_grep.py'
+    alias node='export NODE_NO_READLINE=1; rlwrap node'
+elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
+elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     # Do something under Cygwin platform
-    alias atom='/cygdrive/c/Users/ljones/AppData/Local/atom/bin/atom.cmd'
+    alias atom='/cygdrive/c/Users/larryj/AppData/Local/atom/bin/atom.cmd'
     alias clj='clj-160'
     alias clj-160='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main'
-    alias clj-clr='clj-clr-160'
-    alias clj-clr-160="~/professional/software/languages/clojure-clr/Release\ 4.0/Clojure.Main.exe"
-    alias clj-clr-160-dbg="~/professional/software/languages/clojure-clr/Debug\ 4.0/Clojure.Main.exe"
+    alias clj-clr='clj-clr-180'
+    alias clj-clr-180="~/professional/software/languages/clojure-clr/clojure-clr-180/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/clojure-clr-180/Debug\ 4.0/Clojure.Main.exe"
     alias cucumber='/cygdrive/c/Ruby21-x64/bin/cucumber.bat'
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
@@ -121,11 +161,11 @@ elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
     alias erl='/cygdrive/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl6.2/bin/escript.exe'
-    alias find_grep='/cygdrive/c/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
+    alias find_grep='/cygdrive/c/Python27/python.exe $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
     alias gem='/cygdrive/c/Ruby21-x64/bin/gem.bat'
+    alias git='/cygdrive/c/PROGRA~1/Git/bin/git.exe'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
     alias jed='/cygdrive/c/PROGRA~2/JED/bin/jed.exe'
-    alias gvim='gvim.bat'
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias iex='/cygdrive/c/PROGRA~2/Elixir/bin/iex.bat'
@@ -143,27 +183,27 @@ elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
     alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='/cygdrive/c/Ruby21-x64/bin/irb.bat'
-    alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_45/bin/jar.exe'
-    alias java='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_45/bin/java.exe'
-    alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_45/bin/javac.exe'
+    alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/jar.exe'
+    alias java='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/java.exe'
+    alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/javac.exe'
     alias lein='~/.lein/bin/lein.bat'
     alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
-    alias manage_mapped_drives='/cygdrive/c/Python34/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
+    alias manage_mapped_drives='/cygdrive/c/Python36/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
 	alias mix="/cygdrive/c/PROGRA~2/Elixir/bin/mix.bat"
     alias mysql='/cygdrive/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant=/cygdrive/c/PROGRA~2/nant-0.92/bin/nant
     alias nosetests=/cygdrive/c/Python27/Scripts/nosetests.exe
-    alias npp='/cygdrive/c/PROGRA~2/NOTEPA~1/notepad++.exe'
+    alias npp='/cygdrive/c/PROGRA~1/NOTEPA~1/notepad++.exe'
     alias path_as_list='python $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
     alias path2svnurl='python $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py)'
     alias pn='/cygdrive/c/PROGRA~2/PROGRA~1/pn.exe'
     alias pip='/cygdrive/c/Python27/Scripts/pip'
-    alias python='python27'
-    alias python27='/cygdrive/c/Python27/python.exe'
-    alias python34='/cygdrive/c/Python34/python.exe'
+    alias python='python3'
+    alias python2='/cygdrive/c/Python27/python.exe'
+    alias python3='/cygdrive/c/Python36/python.exe'
     alias R='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
     alias ra12='/cygdrive/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rm_gen_bin='python $(cygpath -wa ~/professional/projects/pyutils/rm_gen_bin.py)'
@@ -181,16 +221,17 @@ elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
     alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
-elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
+elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     # Do something under Windows NT platform
     alias ack='perl /c/PROGRA~3/CHOCOL~1/lib/STRAWB~1/Ack/tools/ack.pl'
-    alias atom='/c/Users/ljones/AppData/Local/atom/bin/atom'
+    alias atom='/c/Users/larryj/AppData/Local/atom/bin/atom'
+    alias boot=~/.boot/boot.exe
     alias cap2esc='~/professional/software/devtools/vim/uncap.exe 0x1b:0x14'
     alias clj='clj-160'
     # alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"
-    alias clj-clr='clj-clr-160'
-    alias clj-clr-160="$CYGHOME/professional/software/languages/clojure-clr/Release\ 4.0/Clojure.Main.exe"
-    alias clj-clr-160-dbg="$CYGHOME/professional/software/languages/clojure-clr/Debug\ 4.0/Clojure.Main.exe"
+    alias clj-clr='clj-clr-180'
+    alias clj-clr-180="~/professional/software/languages/clojure-clr/clojure-clr-180/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/clojure-clr-180/Debug\ 4.0/Clojure.Main.exe"
     alias cucumber='/c/Ruby21-x64/bin/cucumber.bat'
     alias doxygen='/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/c/eclipse/eclipse.exe'
@@ -203,7 +244,7 @@ elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
     alias erl='/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/c/PROGRA~1/erl6.2/bin/escript.exe'
-#     alias find_grep="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/find_grep.py)"
+    alias find_grep="/c/Python27/python.exe $HOME/professional/projects/pyutils/find_grep.py"
     alias gem='cmd //c /c/Ruby21-x64/bin/gem.bat'
     alias inst_profile="cp .bash_profile $CYGHOME/.bash_profile"
     alias jed='/c/PROGRA~2/JED/bin/jed.exe'
@@ -224,10 +265,10 @@ elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
     alias ir='/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='cmd //c /c/Ruby21-x64/bin/irb.bat'
-    alias jar='/c/PROGRA~1/Java/jdk1.8.0_45/bin/jar.exe'
-    alias java='/c/PROGRA~1/Java/jdk1.8.0_45/bin/java.exe'
-    alias javac='/c/PROGRA~1/Java/jdk1.8.0_45/bin/javac.exe'
-    alias lein="$CYGHOME/.lein/bin/lein.bat"
+    alias jar='/c/PROGRA~1/Java/jdk1.8.0_161/bin/jar.exe'
+    alias java='/c/PROGRA~1/Java/jdk1.8.0_161/bin/java.exe'
+    alias javac='/c/PROGRA~1/Java/jdk1.8.0_161/bin/javac.exe'
+    alias lein="~/.lein/bin/lein.bat"
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
     alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb="$CYGHOME/professional/software/system/drivetools/ListUsbDrives.exe"
@@ -237,14 +278,14 @@ elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
 #    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
     alias nant=/c/PROGRA~2/nant-0.92/bin/nant
     alias nosetests=/c/Python27/Scripts/nosetests.exe
-    alias npp='/c/PROGRA~2/NOTEPA~1/notepad++.exe'
+    alias npp='/c/PROGRA~1/NOTEPA~1/notepad++.exe'
 #    alias path_as_list="python $(cygpath -w $CYGHOME/professional/projects/pyutils/path2list.py)"
 #    alias path2svnurl="python $(cygpath -w $CYGHOME/professional/projects/pyutils/dirname_to_svn_url.py)"
     alias pn='/c/PROGRA~2/PROGRA~1/pn.exe'
     alias pip='/c/Python27/Scripts/pip'
-    alias python='python27'
-    alias python27='/c/Python27/python.exe'
-    alias python34='/c/Python34/python.exe'
+    alias python='python3'
+    alias python2='/c/Python27/python.exe'
+    alias python3='/c/Python36/python.exe'
     alias R='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
     alias ra12='/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rspec='/c/Ruby21-x64/bin/rspec.bat'
@@ -263,7 +304,7 @@ elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
 fi
 
 # Aliases commont to both Cygwin and MWING32
-if [ "$(expr substr $(uname -s) 8 2)" == "NT" -o "$(expr substr $(uname -s) 9 2)" == "NT" ]; then
+if [[ ${SYS_NAME:7:2} == "NT" || ${SYS_NAME:8:2} == "NT" ]]; then
     # Do something for cygwin and msys
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
 fi

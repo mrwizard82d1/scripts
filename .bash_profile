@@ -1,19 +1,32 @@
 # (Bash) Shell startup script.
 
-if [ "$(uname)" == "Darwin" ]; then
-    # Do something under Mac OS X platform
-    :
-    export SVN_EDITOR="mvim -f --nomru"
-    # export GIT_EDITOR="mvim -f --nomru"
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+(set -o igncr) 2>/dev/null && set -o igncr; # this comment is required
+
+MINGW_SYS_NAME="MINGW32_NT-10.0-WOW"
+SYS_NAME=$(uname -s)
+if [ $SYS_NAME == "Darwin" ]; then
+    export SVN_EDITOR=vim
+    export GIT_EDITOR=vim
+    export EDITOR=vim
+
+	# Support node version manager using brew (not supported by original
+	# nvm authors)
+	export NVM_DIR="$HOME/.nvm"
+	. "/usr/local/opt/nvm/nvm.sh"
+elif [ ${SYS_NAME:0:5} == "Linux" ]; then
     # Do something under Linux platform
     :
-elif [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT" ]; then
-    # Do something under Cygwin platform
-    export SVN_EDITOR=$(cygpath -w /cygdrive/c/Windows/gvim.bat)
-    export GIT_EDITOR=\'$(cygpath -wa /cygdrive/c/Windows/gvim.bat)\'
-    export EDITOR=$(cygpath -w /cygdrive/c/Windows/gvim.bat)
-elif [ "$(expr substr $(uname -s) 1 15)" == "MINGW64_NT-10.0" ]; then
+elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
+    # Ignore CR
+    export SHELLOPTS
+    set -o igncr
+
+    # Set up editors
+    export SVN_EDITOR=c:/cygwin64/bin/vi.exe
+    export GIT_EDITOR=c:/cygwin64/bin/vi.exe
+    export EDITOR=c:/cygwin64/bin/vi.exe
+    export PAGER="less -R"
+elif [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
     # Do something under Windows NT platform
     # I need to install rlwrap on Windows - but not for now.
     export SVN_EDITOR='cmd //c /c/Windows/gvim.bat'
@@ -29,6 +42,10 @@ case `hostname` in
     swilliams-PC) EMACS_SIZE=80x43;;
 esac
 
+# Load rbenv automatically by appending
+# the following to ~/.bash_profile:
+
+eval "$(rbenv init -)"
 
 # Include ~/.bashrc if available.
 [[ -r ~/.bashrc ]] && source ~/.bashrc

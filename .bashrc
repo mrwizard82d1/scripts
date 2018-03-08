@@ -54,7 +54,7 @@ function whitepapers()
     cd ~/professional/whitepapers/${1}
 }
 
-MINGW_SYS_NAME="MINGW32_NT"
+MINGW_SYS_NAME="MINGW64_NT"
 SYS_NAME=$(uname -s)
 if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
@@ -75,7 +75,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 	}
 fi
 
-# Functions common to Cygwin and MWING32
+# Functions common to Cygwin and MWING64
 if [[ ${SYS_NAME:7:2} = "NT" || ${SYS_NAME:8:2} = "NT" ]] ; then
 	function work_proj()
 	{
@@ -90,35 +90,25 @@ fi
 
 # Work only
 if [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
-    export AB_PROJ=/c/AutobahnProjects
-	function ab_proj()
+    export SRC=/c/src
+	function res_proj()
 	{
-		cd $AB_PROJ/${1}
+		cd $SRC/${1}
 	}
 
-	function ab()
+	function proj_template()
 	{
-		cd $AB_PROJ/Autobahn/${1}
+		cd $SRC/Project_Template/${1}
 	}
 
-	function cr()
+	function work_folder()
 	{
-		cd $AB_PROJ/Autobahn.CustomerRelations/${1}
+		cd $SRC/Project_Template/Workfolder/${1}
 	}
 
-	function eleanor()
+	function mlp()
 	{
-		cd $AB_PROJ/Autobahn/app/Eleanor.UI.Web/${1}
-	}
-
-	function ronaele()
-	{
-		cd $AB_PROJ/Autobahn/app/Ronaele.UI.Web/${1}
-	}
-
-	function react()
-	{
-		cd $AB_PROJ/Autobahn/app/Eleanor.UI.Web/Content/javascripts/react/site-bdc/${1}
+		cd $SRC/MatlabPackages/${1}
 	}
 fi
 
@@ -303,7 +293,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias wjed='/c/PROGRA~2/JED/bin/wjed.exe'
 fi
 
-# Aliases commont to both Cygwin and MWING32
+# Aliases commont to both Cygwin and MWING64
 if [[ ${SYS_NAME:7:2} == "NT" || ${SYS_NAME:8:2} == "NT" ]]; then
     # Do something for cygwin and msys
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'

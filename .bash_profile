@@ -2,7 +2,7 @@
 
 (set -o igncr) 2>/dev/null && set -o igncr; # this comment is required
 
-MINGW_SYS_NAME="MINGW32_NT-10.0-WOW"
+MINGW_SYS_NAME="MINGW64_NT"
 SYS_NAME=$(uname -s)
 if [ $SYS_NAME == "Darwin" ]; then
     export SVN_EDITOR=vim
@@ -21,7 +21,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     export GIT_EDITOR=c:/cygwin64/bin/vi.exe
     export EDITOR=c:/cygwin64/bin/vi.exe
     export PAGER="less -R"
-elif [ ${SYS_NAME:0:15} == $MINGW_SYS_NAME ]; then
+elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     # Do something under Windows NT platform
     # I need to install rlwrap on Windows - but not for now.
     export SVN_EDITOR='cmd //c /c/Windows/gvim.bat'

@@ -110,6 +110,8 @@ if [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 	{
 		cd $SRC/MatlabPackages/${1}
 	}
+
+	alias matlab='"/c/Program Files/MATLAB/R2017b/bin/matlab.exe"'
 fi
 
 # Configure emacs screen sizes
@@ -218,7 +220,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias boot=~/.boot/boot.exe
     alias cap2esc='~/professional/software/devtools/vim/uncap.exe 0x1b:0x14'
     alias clj='clj-160'
-    # alias clj-160="java -cp $(cygpath -wa $CYGHOME/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main"
+    alias clj-160="java -cp c:/tools/clojure-1.6.0/clojure-1.6.0.jar clojure.main"
     alias clj-clr='clj-clr-180'
     alias clj-clr-180="~/professional/software/languages/clojure-clr/clojure-clr-180/Release\ 4.0/Clojure.Main.exe"
     alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/clojure-clr-180/Debug\ 4.0/Clojure.Main.exe"
@@ -255,9 +257,9 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias ir='/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='cmd //c /c/Ruby21-x64/bin/irb.bat'
-    alias jar='/c/PROGRA~1/Java/jdk1.8.0_161/bin/jar.exe'
-    alias java='/c/PROGRA~1/Java/jdk1.8.0_161/bin/java.exe'
-    alias javac='/c/PROGRA~1/Java/jdk1.8.0_161/bin/javac.exe'
+    alias jar='/c/PROGRA~1/Java/jdk1.8.0_162/bin/jar.exe'
+    alias java='/c/PROGRA~1/Java/jdk1.8.0_162/bin/java.exe'
+    alias javac='/c/PROGRA~1/Java/jdk1.8.0_162/bin/javac.exe'
     alias lein="~/.lein/bin/lein.bat"
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
     alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe

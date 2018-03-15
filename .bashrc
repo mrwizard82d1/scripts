@@ -219,8 +219,9 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias atom='/c/Users/larryj/AppData/Local/atom/bin/atom'
     alias boot=~/.boot/boot.exe
     alias cap2esc='~/professional/software/devtools/vim/uncap.exe 0x1b:0x14'
-    alias clj='clj-160'
+    alias clj='clj-180'
     alias clj-160="java -cp c:/tools/clojure-1.6.0/clojure-1.6.0.jar clojure.main"
+    alias clj-180="java -cp ~/professional/software/languages/clojure/clojure-1.8.0/clojure-1.8.0.jar clojure.main"
     alias clj-clr='clj-clr-180'
     alias clj-clr-180="~/professional/software/languages/clojure-clr/clojure-clr-180/Release\ 4.0/Clojure.Main.exe"
     alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/clojure-clr-180/Debug\ 4.0/Clojure.Main.exe"

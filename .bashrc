@@ -111,7 +111,8 @@ if [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 		cd $SRC/MatlabPackages/${1}
 	}
 
-	alias matlab='"/c/Program Files/MATLAB/R2017b/bin/matlab.exe"'
+	alias matlab-2017='"/c/Program Files/MATLAB/R2017b/bin/matlab.exe"'
+	alias matlab='"/c/Program Files/MATLAB/R2018a/bin/matlab.exe"'
 fi
 
 # Configure emacs screen sizes

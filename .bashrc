@@ -267,7 +267,8 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb="$CYGHOME/professional/software/system/drivetools/ListUsbDrives.exe"
 #    alias manage_mapped_drives="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/manage_mapped_drives.py)"
-	alias mix="/c/PROGRA~2/Elixir/bin/mix.bat"
+    alias meld="/c/PROGRA~2/Meld/Meld.exe"
+    alias mix="/c/PROGRA~2/Elixir/bin/mix.bat"
     alias mysql='/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
 #    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
     alias nant=/c/PROGRA~2/nant-0.92/bin/nant

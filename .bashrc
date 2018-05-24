@@ -128,7 +128,7 @@ esac
 alias ant='${ANT_HOME}/bin/ant.bat'
 if [ $SYS_NAME == "Darwin" ]; then
     # Do something under Mac OS X platform
-    alias emacs='open -a /Applications/Emails.app'
+    alias emacs='open -a /Applications/Emacs.app'
     alias find_grep='python2 ~/professional/projects/pyutils/find_grep.py'
     alias node='export NODE_NO_READLINE=1; rlwrap node'
 elif [ ${SYS_NAME:0:5} == "Linux" ]; then

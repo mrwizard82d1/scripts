@@ -147,8 +147,8 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
     alias eclipse_j2ee='/cygdrive/c/eclipse-j2ee/eclipse.exe'
     alias eject='~/professional/software/system/drivetools/EjectMedia.exe'
-    alias elixir='/cygdrive/c/PROGRA~2/Elixir/bin/elixir.bat'
-    alias elixirc='/cygdrive/c/PROGRA~2/Elixir/bin/elixirc.bat'
+    alias elixir='/c/ProgramData/chocolatey/lib/Elixir/bin/elixir'
+    alias elixirc='/c/ProgramData/chocolatey/lib/Elixir/bin/elixirc'
     alias emacs='/cygdrive/c/emacs-25.3/bin/runemacs.exe'
     alias erl='/cygdrive/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
@@ -160,8 +160,8 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias jed='/cygdrive/c/PROGRA~2/JED/bin/jed.exe'
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
-    alias iex='/cygdrive/c/PROGRA~2/Elixir/bin/iex.bat'
-    alias iexw='/cygdrive/c/PROGRA~2/Elixir/bin/iex.bat --werl'
+    alias iex='/c/ProgramData/chocolatey/lib/Elixir/bin/iex'
+    alias iexw='/c/ProgramData/chocolatey/lib/Elixir/bin/iex --werl'
     alias igem='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/igem.bat'
     alias ilettuce='ipy $(cygpath -wd /cygdrive/c/PROGRA~1/IronPython\ 2.7/Lib/site-packages/lettuce/lettuce_cli.py)'
     alias iirb='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/iirb.bat'
@@ -183,7 +183,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
     alias manage_mapped_drives='/cygdrive/c/Python36/python.exe $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
-	alias mix="/cygdrive/c/PROGRA~2/Elixir/bin/mix.bat"
+    alias mix='/c/ProgramData/chocolatey/lib/Elixir/bin/mix'
     alias mysql='/cygdrive/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant=/cygdrive/c/PROGRA~2/nant-0.92/bin/nant
@@ -266,7 +266,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias list_usb="$CYGHOME/professional/software/system/drivetools/ListUsbDrives.exe"
 #    alias manage_mapped_drives="/c/Python34/python.exe $(cygpath -w $CYGHOME/professional/projects/pyutils/manage_mapped_drives.py)"
     alias meld="/c/PROGRA~2/Meld/Meld.exe"
-    alias mix="/c/PROGRA~2/Elixir/bin/mix.bat"
+    alias mix='/c/ProgramData/chocolatey/lib/Elixir/bin/mix'
     alias mysql='/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
 #    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
     alias nant=/c/PROGRA~2/nant-0.92/bin/nant

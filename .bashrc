@@ -3,6 +3,11 @@ set -o vi
 # User-specific functions and aliases.
 
 # Utility functions
+function erl_shell_history()
+{
+	export ERL_AFLAGS="-kernel shell_history enabled"
+}
+
 function latest()
 {
     ls -ltd ${1} | head ${2}

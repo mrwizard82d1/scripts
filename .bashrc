@@ -143,11 +143,17 @@ elif [ ${SYS_NAME:0:5} == "Linux" ]; then
 elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     # Do something under Cygwin platform
     alias atom='/cygdrive/c/Users/larryj/AppData/Local/atom/bin/atom.cmd'
-    alias clj='clj-160'
-    alias clj-160='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.6.0/clojure-1.6.0.jar) clojure.main'
+    alias clj='clj-1.10.0'
+    alias clj-180='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.8.0/clojure-1.8.0.jar) clojure.main'
+    alias clj-190='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.9.0/clojure-1.9.0.jar) clojure.main'
+    alias clj-1.10.0='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.10.0/clojure-1.10.0.jar) clojure.main'
     alias clj-clr='clj-clr-180'
-    alias clj-clr-180="~/professional/software/languages/clojure-clr/clojure-clr-180/Release\ 4.0/Clojure.Main.exe"
-    alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/clojure-clr-180/Debug\ 4.0/Clojure.Main.exe"
+    alias clj-clr-dbg='clj-clr-180-dbg'
+    alias clj-clr-180="~/professional/software/languages/clojure-clr/1.8.0/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/1.8.0/Debug\ 4.0/Clojure.Main.exe"
+    # Note Clojure-CLR 1.9.0 not ready for prime time
+    alias clj-clr-190="~/professional/software/languages/clojure-clr/1.9.0/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-190-dbg="~/professional/software/languages/clojure-clr/1.9.0/Debug\ 4.0/Clojure.Main.exe"
     alias cucumber='/cygdrive/c/Ruby21-x64/bin/cucumber.bat'
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
@@ -225,12 +231,17 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias atom='/c/Users/larryj/AppData/Local/atom/bin/atom'
     alias boot=~/.boot/boot.exe
     alias cap2esc='~/professional/software/devtools/vim/uncap.exe 0x1b:0x14'
-    alias clj='clj-180'
-    alias clj-160="java -cp c:/tools/clojure-1.6.0/clojure-1.6.0.jar clojure.main"
-    alias clj-180="java -cp ~/professional/software/languages/clojure/clojure-1.8.0/clojure-1.8.0.jar clojure.main"
+    alias clj='clj-1.10.0'
+    alias clj-180='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.8.0/clojure-1.8.0.jar) clojure.main'
+    alias clj-190='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.9.0/clojure-1.9.0.jar) clojure.main'
+    alias clj-1.10.0='java -cp $(cygpath -wa ~/professional/software/languages/clojure/clojure-1.10.0/clojure-1.10.0.jar) clojure.main'
     alias clj-clr='clj-clr-180'
-    alias clj-clr-180="~/professional/software/languages/clojure-clr/clojure-clr-180/Release\ 4.0/Clojure.Main.exe"
-    alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/clojure-clr-180/Debug\ 4.0/Clojure.Main.exe"
+    alias clj-clr-dbg='clj-clr-180-dbg'
+    alias clj-clr-180="~/professional/software/languages/clojure-clr/1.8.0/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-180-dbg="~/professional/software/languages/clojure-clr/1.8.0/Debug\ 4.0/Clojure.Main.exe"
+    # Note Clojure-CLR 1.9.0 not ready for prime time
+    alias clj-clr-190="~/professional/software/languages/clojure-clr/1.9.0/Release\ 4.0/Clojure.Main.exe"
+    alias clj-clr-190-dbg="~/professional/software/languages/clojure-clr/1.9.0/Debug\ 4.0/Clojure.Main.exe"
     alias cucumber='/c/Ruby21-x64/bin/cucumber.bat'
     alias doxygen='/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/c/eclipse/eclipse.exe'

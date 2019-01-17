@@ -154,7 +154,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     # Note Clojure-CLR 1.9.0 not ready for prime time
     alias clj-clr-190="~/professional/software/languages/clojure-clr/1.9.0/Release\ 4.0/Clojure.Main.exe"
     alias clj-clr-190-dbg="~/professional/software/languages/clojure-clr/1.9.0/Debug\ 4.0/Clojure.Main.exe"
-    alias cucumber='/cygdrive/c/Ruby21-x64/bin/cucumber.bat'
+    alias cucumber='/cygdrive/c/tools/ruby26/bin/cucumber.bat'
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
     alias eclipse_j2ee='/cygdrive/c/eclipse-j2ee/eclipse.exe'
@@ -166,7 +166,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl6.2/bin/escript.exe'
     alias find_grep='py -2 $(cygpath -w ~/professional/projects/pyutils/find_grep.py)'
-    alias gem='/cygdrive/c/Ruby21-x64/bin/gem.bat'
+    alias gem='/cygdrive/c/tools/ruby26/bin/gem'
     alias git='/cygdrive/c/PROGRA~1/Git/bin/git.exe'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
     alias jed='/cygdrive/c/PROGRA~2/JED/bin/jed.exe'
@@ -186,7 +186,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias ipycc27_32='/cygdrive/c/PROGRA~2/IronPython\ 2.7/ipy.exe -X:TabCompletion -X:ColorfulConsole'
     alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
-    alias irb='/cygdrive/c/Ruby21-x64/bin/irb.bat'
+    alias irb='/cygdrive/c/tools/ruby26/bin/irb.bat'
     alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/jar.exe'
     alias java='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/java.exe'
     alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/javac.exe'
@@ -214,9 +214,9 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias rm_usb='~/professional/software/system/drivetools/RemoveDrive.exe'
     alias roundup_admin='py -c "from roundup.scripts.roundup_admin import run; run()"'
     alias roundup_server='py -c "from roundup.scripts.roundup_server import run; run()"'
-    alias rspec='/cygdrive/c/Ruby21-x64/bin/rspec.bat'
+    alias rspec='/cygdrive/c/tools/ruby26/bin/rspec.bat'
     alias Rterm='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
-    #    alias ruby='/cygdrive/c/Ruby21-x64/bin/ruby.exe'
+    #    alias ruby='/cygdrive/c/tools/ruby26/bin/ruby.exe'
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
     alias st='/cygdrive/c/PROGRA~2/SUBLIM~1/sublime_text.exe'
     alias svn='/cygdrive/c/Program\ Files/TortoiseSVN/bin/svn.exe'
@@ -242,7 +242,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     # Note Clojure-CLR 1.9.0 not ready for prime time
     alias clj-clr-190="~/professional/software/languages/clojure-clr/1.9.0/Release\ 4.0/Clojure.Main.exe"
     alias clj-clr-190-dbg="~/professional/software/languages/clojure-clr/1.9.0/Debug\ 4.0/Clojure.Main.exe"
-    alias cucumber='/c/Ruby21-x64/bin/cucumber.bat'
+    alias cucumber='/c/tools/ruby26/bin/cucumber.bat'
     alias doxygen='/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/c/eclipse/eclipse.exe'
     alias eclipse_j2ee='/c/eclipse-j2ee/eclipse.exe'
@@ -254,7 +254,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias erlc='/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/c/PROGRA~1/erl6.2/bin/escript.exe'
     alias find_grep="py -2 $HOME/professional/projects/pyutils/find_grep.py"
-    alias gem='cmd //c /c/Ruby21-x64/bin/gem.bat'
+    alias gem='/c/tools/ruby26/bin/gem'
     alias inst_profile="cp .bash_profile $CYGHOME/.bash_profile"
     alias jed='/c/PROGRA~2/JED/bin/jed.exe'
     alias hg='/c/PROGRA~1/TortoiseHg/hg.exe'
@@ -273,7 +273,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias ipycc27_32='/c/PROGRA~2/IronPython\ 2.7/ipy.exe -X:TabCompletion -X:ColorfulConsole'
     alias ir='/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
-    alias irb='cmd //c /c/Ruby21-x64/bin/irb.bat'
+    alias irb='cmd //c /c/tools/ruby26/bin/irb.bat'
     alias jar='/c/PROGRA~1/Java/jdk1.8.0_162/bin/jar.exe'
     alias java='/c/PROGRA~1/Java/jdk1.8.0_162/bin/java.exe'
     alias javac='/c/PROGRA~1/Java/jdk1.8.0_162/bin/javac.exe'
@@ -298,7 +298,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias python3='py -3'
     alias R='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
     alias ra12='/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
-    alias rspec='/c/Ruby21-x64/bin/rspec.bat'
+    alias rspec='/c/tools/ruby26/bin/rspec.bat'
     alias Rterm='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
 #    alias rm_gen_bin="py $(cygpath -wa $CYGHOME/professional/projects/pyutils/rm_gen_bin.py)"
     alias rm_usb="$CYGHOME/professional/software/system/drivetools/RemoveDrive.exe"

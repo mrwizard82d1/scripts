@@ -196,6 +196,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'
     alias manage_mapped_drives='py $(cygpath -w ~/professional/projects/pyutils/manage_mapped_drives.py)'
     alias mix='/c/ProgramData/chocolatey/lib/Elixir/bin/mix'
+    alias mongo='/cygdrive/c/PROGRA~1/MongoDB/Server/4.0/bin/mongo.exe'
     alias mysql='/cygdrive/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
     alias name_2_ip_addr='ipy $(cygpath -w ~/professional/projects/ipyutils/name_to_ip_addr.py)'
     alias nant=/cygdrive/c/PROGRA~2/nant-0.92/bin/nant
@@ -284,6 +285,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 #    alias manage_mapped_drives="py -3 $(cygpath -w $CYGHOME/professional/projects/pyutils/manage_mapped_drives.py)"
     alias meld="/c/PROGRA~2/Meld/Meld.exe"
     alias mix='/c/ProgramData/chocolatey/lib/Elixir/bin/mix'
+    alias mongo='/c/PROGRA~1/MongoDB/Server/4.0/bin/mongo.exe'
     alias mysql='/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
 #    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
     alias nant=/c/PROGRA~2/nant-0.92/bin/nant

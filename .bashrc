@@ -289,7 +289,9 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias nosetests=/c/Python27/Scripts/nosetests.exe
     alias path2list="py $(cygpath $HOME/professional/projects/pyutils/path2list.py)"
 #    alias path2svnurl="py $(cygpath $HOME/professional/projects/pyutils/dirname_to_svn_url.py)"
-    alias pip='/c/Python27/Scripts/pip'
+    alias pip2='/c/Python27/Scripts/pip'
+    alias pip3='$HOME/AppData/Local/Programs/Python/Python37/Scripts/pip.exe'
+    alias pip='pip'
     alias python='py -3'
     alias python2='py -2'
     alias python3='py -3'

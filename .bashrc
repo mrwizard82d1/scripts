@@ -202,7 +202,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias nant=/cygdrive/c/PROGRA~2/nant-0.92/bin/nant
     alias nosetests=/cygdrive/c/Python27/Scripts/nosetests.exe
     alias npp='/cygdrive/c/PROGRA~1/NOTEPA~1/notepad++.exe'
-    alias path_as_list='py $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
+    alias path2list='py $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
     alias path2svnurl='py $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py)'
     alias pn='/cygdrive/c/PROGRA~2/PROGRA~1/pn.exe'
     alias pip='/cygdrive/c/Python27/Scripts/pip'
@@ -280,9 +280,6 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias javac='/c/PROGRA~1/Java/jdk1.8.0_162/bin/javac.exe'
     alias lein="~/.lein/bin/lein.bat"
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
-    alias lighttable=$CYGHOME/professional/software/devtools/light_table/LightTable/LightTable.exe
-    alias list_usb="$CYGHOME/professional/software/system/drivetools/ListUsbDrives.exe"
-#    alias manage_mapped_drives="py -3 $(cygpath -w $CYGHOME/professional/projects/pyutils/manage_mapped_drives.py)"
     alias meld="/c/PROGRA~2/Meld/Meld.exe"
     alias mix='/c/ProgramData/chocolatey/lib/Elixir/bin/mix'
     alias mongo='/c/PROGRA~1/MongoDB/Server/4.0/bin/mongo.exe'
@@ -290,10 +287,8 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 #    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
     alias nant=/c/PROGRA~2/nant-0.92/bin/nant
     alias nosetests=/c/Python27/Scripts/nosetests.exe
-    alias npp='/c/PROGRA~1/NOTEPA~1/notepad++.exe'
-#    alias path_as_list="py $(cygpath -w $CYGHOME/professional/projects/pyutils/path2list.py)"
-#    alias path2svnurl="py $(cygpath -w $CYGHOME/professional/projects/pyutils/dirname_to_svn_url.py)"
-    alias pn='/c/PROGRA~2/PROGRA~1/pn.exe'
+    alias path2list="py $(cygpath $HOME/professional/projects/pyutils/path2list.py)"
+#    alias path2svnurl="py $(cygpath $HOME/professional/projects/pyutils/dirname_to_svn_url.py)"
     alias pip='/c/Python27/Scripts/pip'
     alias python='py -3'
     alias python2='py -2'
@@ -302,10 +297,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias ra12='/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rspec='/c/tools/ruby26/bin/rspec.bat'
     alias Rterm='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
-#    alias rm_gen_bin="py $(cygpath -wa $CYGHOME/professional/projects/pyutils/rm_gen_bin.py)"
-    alias rm_usb="$CYGHOME/professional/software/system/drivetools/RemoveDrive.exe"
-    alias roundup_admin='py -c "from roundup.scripts.roundup_admin import run; run()"'
-    alias roundup_server='py -c "from roundup.scripts.roundup_server import run; run()"'
+    alias rm_gen_bin="py $(cygpath $HOME/professional/projects/pyutils/rm_gen_bin.py)"
 #    alias save_clipboard_image="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/save_clipboard_image.py)"
     alias st='/c/PROGRA~2/SUBLIM~1/sublime_text.exe'
     alias svn='/c/Program\ Files/TortoiseSVN/bin/svn.exe'
@@ -313,10 +305,12 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias vs_2012='start cmd /k /c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat'
     alias werl='/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/c/PROGRA~2/JED/bin/wjed.exe'
+    alias zip_dirname="py -2 $HOME/professional/projects/pyutils/zip_dirname.py"
 fi
 
 # Aliases commont to both Cygwin and MWING64
 if [[ ${SYS_NAME:7:2} == "NT" || ${SYS_NAME:8:2} == "NT" ]]; then
     # Do something for cygwin and msys
     alias aspell='/cygdrive/c/PROGRA~1/Aspell/bin/aspell.exe'
+	alias glodi='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'' --date=iso8601'
 fi

@@ -258,9 +258,11 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias escript='/c/PROGRA~1/erl6.2/bin/escript.exe'
     alias find_grep="py -2 $HOME/professional/projects/pyutils/find_grep.py"
     alias gem='/c/tools/ruby26/bin/gem'
+    alias hg='/c/PROGRA~1/TortoiseHg/hg.exe'
+    alias hoverfly='c:/Users/larry.jones/professional/software/devtools/hoverfly/hoverfly.exe'
+    alias hoverctl='c:/Users/larry.jones/professional/software/devtools/hoverfly/hoverctl.exe'
     alias inst_profile="cp .bash_profile $CYGHOME/.bash_profile"
     alias jed='/c/PROGRA~2/JED/bin/jed.exe'
-    alias hg='/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias iex='/c/ProgramData/chocolatey/lib/Elixir/bin/iex'
     alias iexw='/c/ProgramData/chocolatey/lib/Elixir/bin/iex --werl'

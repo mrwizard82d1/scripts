@@ -154,6 +154,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     # Note Clojure-CLR 1.9.0 not ready for prime time
     alias clj-clr-190="~/professional/software/languages/clojure-clr/1.9.0/Release\ 4.0/Clojure.Main.exe"
     alias clj-clr-190-dbg="~/professional/software/languages/clojure-clr/1.9.0/Debug\ 4.0/Clojure.Main.exe"
+    alias conda="C:/Users/larry.jones/Miniconda3/Lib/site-packages/conda/shell/bin/conda"
     alias cucumber='/cygdrive/c/tools/ruby26/bin/cucumber.bat'
     alias doxygen='/cygdrive/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/cygdrive/c/eclipse/eclipse.exe'
@@ -245,6 +246,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     # Note Clojure-CLR 1.9.0 not ready for prime time
     alias clj-clr-190="~/professional/software/languages/clojure-clr/1.9.0/Release\ 4.0/Clojure.Main.exe"
     alias clj-clr-190-dbg="~/professional/software/languages/clojure-clr/1.9.0/Debug\ 4.0/Clojure.Main.exe"
+    alias conda="C:/Users/larry.jones/Miniconda3/Lib/site-packages/conda/shell/bin/conda"
     alias cucumber='/c/tools/ruby26/bin/cucumber.bat'
     alias doxygen='/c/PROGRA~1/doxygen/bin/doxygen.exe'
     alias eclipse='/c/eclipse/eclipse.exe'

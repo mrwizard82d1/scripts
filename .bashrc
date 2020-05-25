@@ -162,7 +162,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias eject='~/professional/software/system/drivetools/EjectMedia.exe'
     alias elixir='/c/ProgramData/chocolatey/lib/Elixir/bin/elixir'
     alias elixirc='/c/ProgramData/chocolatey/lib/Elixir/bin/elixirc'
-    alias emacs='/cygdrive/c/emacs-25.3/bin/runemacs.exe'
+    alias emacs='/cygdrive/c/emacs-26.3/bin/runemacs.exe'
     alias erl='/cygdrive/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl6.2/bin/escript.exe'
@@ -254,12 +254,12 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias eject="$CYGHOME/professional/software/system/drivetools/EjectMedia.exe"
     alias elixir='/c/ProgramData/chocolatey/lib/Elixir/bin/elixir'
     alias elixirc='/c/ProgramData/chocolatey/lib/Elixir/bin/elixir'
-    alias emacs='/c/emacs-25.3/bin/runemacs.exe'
-    alias erl='/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
-    alias erlc='/c/PROGRA~1/erl6.2/bin/erlc.exe'
-    alias escript='/c/PROGRA~1/erl6.2/bin/escript.exe'
+    alias emacs='/c/emacs-26.3/bin/runemacs.exe'
+    alias erl='/c/ProgramData/chocolatey/bin/erl -smp'
+    alias erlc='/c/ProgramData/chocolatey/bin/erlc'
+    alias escript='/c/ProgramData/chocolatey/bin/escript'
     alias find_grep="py -2 $HOME/professional/projects/pyutils/find_grep.py"
-    alias gem='/c/tools/ruby26/bin/gem'
+    alias gem='/c/tools/ruby27/bin/gem'
     alias hg='/c/PROGRA~1/TortoiseHg/hg.exe'
     alias hoverfly='c:/Users/larry.jones/professional/software/devtools/hoverfly/hoverfly.exe'
     alias hoverctl='c:/Users/larry.jones/professional/software/devtools/hoverfly/hoverctl.exe'
@@ -280,11 +280,12 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias ipycc27_32='/c/PROGRA~2/IronPython\ 2.7/ipy.exe -X:TabCompletion -X:ColorfulConsole'
     alias ir='/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
-    alias irb='cmd //c /c/tools/ruby26/bin/irb.bat'
-    alias jar='/c/PROGRA~1/Java/jdk1.8.0_162/bin/jar.exe'
-    alias java='/c/PROGRA~1/Java/jdk1.8.0_162/bin/java.exe'
-    alias javac='/c/PROGRA~1/Java/jdk1.8.0_162/bin/javac.exe'
-    alias lein="~/.lein/bin/lein.bat"
+    # alias irb='cmd //c /c/tools/ruby26/bin/irb.bat'
+    alias irb='/c/tools/ruby27/bin/irb'
+    alias jar='/c/Program\ Files/OpenJDK/openjdk-11.0.7_10/bin/jar'
+    alias java='/c/Program\ Files/OpenJDK/openjdk-11.0.7_10/bin/java'
+    alias javac='/c/Program\ Files/OpenJDK/openjdk-11.0.7_10/bin/javac'
+    alias lein='/c/Users/larry.jones/.local/bin/lein'
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
     alias meld="/c/PROGRA~2/Meld/Meld.exe"
     alias mix='/c/ProgramData/chocolatey/lib/Elixir/bin/mix'
@@ -311,7 +312,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias svn='/c/Program\ Files/TortoiseSVN/bin/svn.exe'
     alias vs_2010='start cmd /k /c/PROGRA~2/MICROS~2.0/VC/vcvarsall.bat x86'
     alias vs_2012='start cmd /k /c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat'
-    alias werl='/c/PROGRA~1/erl6.2/bin/werl.exe'
+    alias werl='/c/ProgramData/chocolatey/bin/werl'
     alias wjed='/c/PROGRA~2/JED/bin/wjed.exe'
     alias zip_dirname="py -2 $HOME/professional/projects/pyutils/zip_dirname.py"
 

@@ -191,7 +191,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias jar='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/jar.exe'
     alias java='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/java.exe'
     alias javac='/cygdrive/c/PROGRA~1/Java/jdk1.8.0_161/bin/javac.exe'
-    alias lein='~/.lein/bin/lein.bat'
+    alias lein='~/.local/bin/lein.bat'
     alias lettuce='/cygdrive/c/Python27/Scripts/lettuce.exe'
     alias lighttable=~/professional/software/devtools/light_table/LightTable/LightTable.exe
     alias list_usb='~/professional/software/system/drivetools/ListUsbDrives.exe'

@@ -283,8 +283,8 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     # alias irb='cmd //c /c/tools/ruby26/bin/irb.bat'
     alias irb='/c/tools/ruby27/bin/irb'
     alias jar='/c/Program\ Files/OpenJDK/openjdk-11.0.7_10/bin/jar'
-    alias java='/c/Program\ Files/OpenJDK/openjdk-11.0.7_10/bin/java'
-    alias javac='/c/Program\ Files/OpenJDK/openjdk-11.0.7_10/bin/javac'
+    alias java='/c/Program\ Files/OpenJDK/jdk-14.0.1/bin/java'
+    alias javac='/c/Program\ Files/OpenJDK/jdk-14.0.1/bin/javac'
     alias lein='/c/Users/larry.jones/.local/bin/lein'
     alias lettuce='/c/Python27/Scripts/lettuce.exe'
     alias meld="/c/PROGRA~2/Meld/Meld.exe"

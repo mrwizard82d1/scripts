@@ -204,7 +204,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias path2svnurl='py $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py)'
     alias pip='pip3'
     alias pip2='/c/Python27/Scripts/pip'
-    alias pip3='$HOME/AppData/Local/Programs/Python/Python37/Scripts/pip.exe'
+    alias pip3='$HOME/AppData/Local/Programs/Python/Python38/Scripts/pip.exe'
     alias python='py -3'
     alias python2='py -2'
     alias python3='py -3'
@@ -288,7 +288,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
 #    alias path2svnurl="py $(cygpath $HOME/professional/projects/pyutils/dirname_to_svn_url.py)"
     alias pip='pip3'
     alias pip2='/c/Python27/Scripts/pip'
-    alias pip3='$HOME/AppData/Local/Programs/Python/Python37/Scripts/pip.exe'
+    alias pip3='$HOME/AppData/Local/Programs/Python/Python38/Scripts/pip.exe'
     alias python='py -3'
     alias python2='py -2'
     alias python3='py -3'

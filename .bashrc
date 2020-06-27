@@ -170,7 +170,6 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias gem='/cygdrive/c/tools/ruby26/bin/gem'
     alias git='/cygdrive/c/PROGRA~1/Git/bin/git.exe'
     alias inst_profile='cp .bash_profile ~/.bash_profile'
-    alias jed='/cygdrive/c/PROGRA~2/JED/bin/jed.exe'
     alias hg='/cygdrive/c/PROGRA~1/TortoiseHg/hg.exe'
     alias icucumber='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/cucumber.bat'
     alias iex='/c/ProgramData/chocolatey/lib/Elixir/bin/iex'
@@ -180,11 +179,9 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias iirb='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/iirb.bat'
     alias inosetests='ipy $(cygpath -wd /cygdrive/c/PROGRA~1/IronPython\ 2.7/Lib/site-packages/nose/core.py)'
     alias ipy='ipy27'
-    alias ipy27='/cygdrive/c/PROGRA~2/IronPython\ 2.7/ipy64.exe'
-    alias ipy27_32='/cygdrive/c/PROGRA~2/IronPython\ 2.7/ipy.exe'
+    alias ipy27='/cygdrive/c/PROGRA~1/IronPython\ 2.7/ipy.exe'
     alias ipycc='ipycc27'
-    alias ipycc27='/cygdrive/c/PROGRA~2/IronPython\ 2.7/ipy64.exe -X:TabCompletion -X:ColorfulConsole'
-    alias ipycc27_32='/cygdrive/c/PROGRA~2/IronPython\ 2.7/ipy.exe -X:TabCompletion -X:ColorfulConsole'
+    alias ipycc27='/cygdrive/c/PROGRA~1/IronPython\ 2.7/ipy.exe -X:TabCompletion -X:ColorfulConsole'
     alias ir='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/cygdrive/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     alias irb='/cygdrive/c/tools/ruby26/bin/irb.bat'
@@ -205,7 +202,6 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias npp='/cygdrive/c/PROGRA~1/NOTEPA~1/notepad++.exe'
     alias path2list='py $(cygpath -w ~/professional/projects/pyutils/path2list.py)'
     alias path2svnurl='py $(cygpath -w ~/professional/projects/pyutils/dirname_to_svn_url.py)'
-    alias pn='/cygdrive/c/PROGRA~2/PROGRA~1/pn.exe'
     alias pip='pip3'
     alias pip2='/c/Python27/Scripts/pip'
     alias pip3='$HOME/AppData/Local/Programs/Python/Python37/Scripts/pip.exe'
@@ -213,7 +209,6 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias python2='py -2'
     alias python3='py -3'
     alias R='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
-    alias ra12='/cygdrive/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rm_gen_bin='py $(cygpath -wa ~/professional/projects/pyutils/rm_gen_bin.py)'
     alias rm_usb='~/professional/software/system/drivetools/RemoveDrive.exe'
     alias roundup_admin='py -c "from roundup.scripts.roundup_admin import run; run()"'
@@ -222,11 +217,9 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias Rterm='/cygdrive/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
     #    alias ruby='/cygdrive/c/tools/ruby26/bin/ruby.exe'
     alias save_clipboard_image='ipy $(cygpath -w ~/professional/projects/ipyutils/save_clipboard_image.py)'
-    alias st='/cygdrive/c/PROGRA~2/SUBLIM~1/sublime_text.exe'
     alias svn='/cygdrive/c/Program\ Files/TortoiseSVN/bin/svn.exe'
     alias vim='vim.bat'
-    alias vs_2010='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~2.0/VC/vcvarsall.bat) x86"'
-    alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
+    # alias vs_2012='cmd /c "start cmd /k $(cygpath -wa /cygdrive/c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat)"'
     alias werl='/cygdrive/c/PROGRA~1/erl6.2/bin/werl.exe'
     alias wjed='/cygdrive/c/PROGRA~2/JED/bin/wjed.exe'
 elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
@@ -273,11 +266,9 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias iirb='/c/PROGRA~1/IRONRU~1.1/bin/iirb.bat'
 #    alias inosetests='ipy $(cygpath -wd /c/PROGRA~1/IronPython\ 2.7/Lib/site-packages/nose/core.py)'
     alias ipy='ipy27'
-    alias ipy27='/c/PROGRA~2/IronPython\ 2.7/ipy64.exe'
-    alias ipy27_32='/c/PROGRA~2/IronPython\ 2.7/ipy.exe'
+    alias ipy27='/c/PROGRA~1/IronPython\ 2.7/ipy.exe'
     alias ipycc='ipycc27'
-    alias ipycc27='/c/PROGRA~2/IronPython\ 2.7/ipy64.exe -X:TabCompletion -X:ColorfulConsole'
-    alias ipycc27_32='/c/PROGRA~2/IronPython\ 2.7/ipy.exe -X:TabCompletion -X:ColorfulConsole'
+    alias ipycc27='/c/PROGRA~1/IronPython\ 2.7/ipy.exe -X:TabCompletion -X:ColorfulConsole'
     alias ir='/c/PROGRA~1/IRONRU~1.1/bin/ir.exe'
     alias irake='/c/PROGRA~1/IRONRU~1.1/bin/rake.bat'
     # alias irb='cmd //c /c/tools/ruby26/bin/irb.bat'
@@ -290,7 +281,6 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias meld="/c/PROGRA~2/Meld/Meld.exe"
     alias mix='/c/ProgramData/chocolatey/lib/Elixir/bin/mix'
     alias mongo='/c/PROGRA~1/MongoDB/Server/4.0/bin/mongo.exe'
-    alias mysql='/c/PROGRA~1/MySQL/MySQL\ Server\ 5.6/bin/mysql.exe'
 #    alias name_2_ip_addr="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/name_to_ip_addr.py)"
     alias nant=/c/PROGRA~2/nant-0.92/bin/nant
     alias nosetests=/c/Python27/Scripts/nosetests.exe
@@ -303,17 +293,12 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias python2='py -2'
     alias python3='py -3'
     alias R='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
-    alias ra12='/c/PROGRA~2/SolArc/RightAngle.NET/12.0/Client/RightAngle.exe'
     alias rspec='/c/tools/ruby26/bin/rspec.bat'
     alias Rterm='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
     alias rm_gen_bin="py $(cygpath $HOME/professional/projects/pyutils/rm_gen_bin.py)"
 #    alias save_clipboard_image="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/save_clipboard_image.py)"
-    alias st='/c/PROGRA~2/SUBLIM~1/sublime_text.exe'
     alias svn='/c/Program\ Files/TortoiseSVN/bin/svn.exe'
-    alias vs_2010='start cmd /k /c/PROGRA~2/MICROS~2.0/VC/vcvarsall.bat x86'
-    alias vs_2012='start cmd /k /c/PROGRA~2/MICROS~3.0/Common7/Tools/VsDevCmd.bat'
     alias werl='/c/ProgramData/chocolatey/bin/werl'
-    alias wjed='/c/PROGRA~2/JED/bin/wjed.exe'
     alias zip_dirname="py -2 $HOME/professional/projects/pyutils/zip_dirname.py"
 
     # Git aliases copied from babun

@@ -162,7 +162,7 @@ elif [ ${SYS_NAME:0:9} == "CYGWIN_NT" ]; then
     alias eject='~/professional/software/system/drivetools/EjectMedia.exe'
     alias elixir='/c/ProgramData/chocolatey/lib/Elixir/bin/elixir'
     alias elixirc='/c/ProgramData/chocolatey/lib/Elixir/bin/elixirc'
-    alias emacs='/cygdrive/c/emacs-26.3/bin/runemacs.exe'
+    alias emacs='/cygdrive/c/PROGRA~1/Emacs/x86_64/bin/runemacs.exe'
     alias erl='/cygdrive/c/PROGRA~1/erl6.2/bin/erl.exe -smp'
     alias erlc='/cygdrive/c/PROGRA~1/erl6.2/bin/erlc.exe'
     alias escript='/cygdrive/c/PROGRA~1/erl6.2/bin/escript.exe'
@@ -247,7 +247,7 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias eject="$CYGHOME/professional/software/system/drivetools/EjectMedia.exe"
     alias elixir='/c/ProgramData/chocolatey/lib/Elixir/bin/elixir'
     alias elixirc='/c/ProgramData/chocolatey/lib/Elixir/bin/elixir'
-    alias emacs='/c/emacs-26.3/bin/runemacs.exe'
+    alias emacs='/c/PROGRA~1/Emacs/x86_64/bin/runemacs.exe'
     alias erl='/c/ProgramData/chocolatey/bin/erl -smp'
     alias erlc='/c/ProgramData/chocolatey/bin/erlc'
     alias escript='/c/ProgramData/chocolatey/bin/escript'

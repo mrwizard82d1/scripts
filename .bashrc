@@ -457,6 +457,6 @@ fi
 # Aliases commont to both Cygwin and MWING64
 if [[ ${SYS_NAME:7:2} == "NT" || ${SYS_NAME:8:2} == "NT" ]]; then
     # Do something for cygwin and msys
-    alias aspell='/cygdrive/c/PROGRA~2/Aspell/bin/aspell.exe'
+    alias aspell='/c/PROGRA~2/Aspell/bin/aspell.exe'
 	alias glodi='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'' --date=iso8601'
 fi

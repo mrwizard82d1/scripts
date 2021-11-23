@@ -296,9 +296,9 @@ elif [ ${SYS_NAME:0:10} == $MINGW_SYS_NAME ]; then
     alias python='py -3'
     alias python2='py -2'
     alias python3='py -3'
-    alias R='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rgui.exe'
+    alias R='"C:/Program Files/R/R-4.1.2/bin/x64/Rgui.exe" --cd-to-userdocs'
     alias rspec='/c/tools/ruby26/bin/rspec.bat'
-    alias Rterm='/c/PROGRA~1/R/R-3.0.2/bin/x64/Rterm.exe'
+    alias Rterm='"C:/Program Files/R/R-4.1.2/bin/x64/Rterm.exe"'
     alias rm_gen_bin="py $(cygpath $HOME/professional/projects/pyutils/rm_gen_bin.py)"
 #    alias save_clipboard_image="ipy $(cygpath -w $CYGHOME/professional/projects/ipyutils/save_clipboard_image.py)"
     alias svn='/c/Program\ Files/TortoiseSVN/bin/svn.exe'

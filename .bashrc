@@ -462,3 +462,10 @@ if [[ ${SYS_NAME:7:2} == "NT" || ${SYS_NAME:8:2} == "NT" ]]; then
     alias aspell='/c/PROGRA~2/Aspell/bin/aspell.exe'
 	alias glodi='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'' --date=iso8601'
 fi
+
+# Launch Zsh
+# The expression, `-t 1`, in `zsh` tests if file descriptor 1 is open and associated with a terminal
+if [ -t 1 ]; then
+exec zsh
+fi
+
